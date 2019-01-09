@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6c4baf1-3a44-4e48-919a-4afb02b8148d" name="Default Changelist" comment="" />
+    <list default="true" id="b6c4baf1-3a44-4e48-919a-4afb02b8148d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f7e1eda5-2c7f-4764-9074-d9c48f416ea2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f7e1eda5-2c7f-4764-9074-d9c48f416ea2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bean/DormBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/DormBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DormDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DormDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,6 +46,13 @@
         <item name="B_server" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="StuentDormManagerDB: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="B_server" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="StuentDormManagerDB: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="DormTable: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -81,43 +97,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f7e1eda5-2c7f-4764-9074-d9c48f416ea2/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/DormDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#155#156#0" expanded="true" />
-                <element signature="e#209#210#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="268">
+              <caret line="46" selection-start-line="46" selection-end-line="46" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+            <state relative-caret-position="303">
+              <caret line="150" column="50" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getConnection#0;class#DormDaoTest#0" />
+                <element signature="method#getDormList#0;class#DormDaoTest#0" />
+                <element signature="method#getDormLivedPerpleNumber#0;class#DormDaoTest#0" />
+                <element signature="method#addPeopleToDorm#0;class#DormDaoTest#0" />
+                <element signature="method#updateDormInfo#0;class#DormDaoTest#0" />
+                <element signature="method#getDormList1#0;class#DormDaoTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2541">
+              <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -125,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dao/GoodsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="63">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -168,19 +185,27 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>RESU</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f7e1eda5-2c7f-4764-9074-d9c48f416ea2/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/StudentBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Bean/DormBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/VisitorBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/GoodsBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/PropertyBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Dao/DormDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/DormBean.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f7e1eda5-2c7f-4764-9074-d9c48f416ea2/console.sql" />
+        <option value="$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/DormDao.java" />
       </list>
     </option>
   </component>
@@ -195,8 +220,9 @@
     <option name="x" value="1920" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="982" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -261,12 +287,13 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546951428258" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547012443206" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -291,8 +318,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DormDaoTest.getConnection">
-    <configuration name="DormDaoTest.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DormDaoTest.getDormListByBuildIdAndFloorNumber">
+    <configuration name="DormDaoTest.getDormList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.binguner.StudentDorm.test" />
       <extension name="coverage">
         <pattern>
@@ -302,7 +329,71 @@
       </extension>
       <option name="PACKAGE_NAME" value="Dao" />
       <option name="MAIN_CLASS_NAME" value="Dao.DormDaoTest" />
-      <option name="METHOD_NAME" value="getConnection" />
+      <option name="METHOD_NAME" value="getDormList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DormDaoTest.getDormList1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.binguner.StudentDorm.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Dao" />
+      <option name="MAIN_CLASS_NAME" value="Dao.DormDaoTest" />
+      <option name="METHOD_NAME" value="getDormList1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DormDaoTest.getDormListByBuildId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.binguner.StudentDorm.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Dao" />
+      <option name="MAIN_CLASS_NAME" value="Dao.DormDaoTest" />
+      <option name="METHOD_NAME" value="getDormListByBuildId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DormDaoTest.getDormListByBuildIdAndFloorNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.binguner.StudentDorm.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Dao" />
+      <option name="MAIN_CLASS_NAME" value="Dao.DormDaoTest" />
+      <option name="METHOD_NAME" value="getDormListByBuildIdAndFloorNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DormDaoTest.getDormLivedPeopleNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.binguner.StudentDorm.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Dao" />
+      <option name="MAIN_CLASS_NAME" value="Dao.DormDaoTest" />
+      <option name="METHOD_NAME" value="getDormLivedPeopleNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -383,7 +474,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DormDaoTest.getConnection" />
+        <item itemvalue="JUnit.DormDaoTest.getDormListByBuildIdAndFloorNumber" />
+        <item itemvalue="JUnit.DormDaoTest.getDormList" />
+        <item itemvalue="JUnit.DormDaoTest.getDormLivedPeopleNumber" />
+        <item itemvalue="JUnit.DormDaoTest.getDormListByBuildId" />
+        <item itemvalue="JUnit.DormDaoTest.getDormList1" />
       </list>
     </recent_temporary>
   </component>
@@ -399,28 +494,50 @@
       <updated>1546939777846</updated>
       <workItem from="1546939782489" duration="1160000" />
       <workItem from="1546946930108" duration="1012000" />
-      <workItem from="1546948561804" duration="2811000" />
+      <workItem from="1546948561804" duration="10812000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DormDaoTest_getConnection - 2019.01.08 at 20h 42m 30s.xml">
-      <configuration name="DormDaoTest.getConnection" configurationId="JUnit" />
+    <history-entry file="DormDaoTest_getDormList1 - 2019.01.08 at 22h 30m 07s.xml">
+      <configuration name="DormDaoTest.getDormList1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DormDaoTest_getConnection - 2019.01.08 at 20h 43m 09s.xml">
-      <configuration name="DormDaoTest.getConnection" configurationId="JUnit" />
+    <history-entry file="DormDaoTest_getDormList1 - 2019.01.08 at 22h 30m 17s.xml">
+      <configuration name="DormDaoTest.getDormList1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DormDaoTest_getConnection - 2019.01.08 at 20h 43m 34s.xml">
-      <configuration name="DormDaoTest.getConnection" configurationId="JUnit" />
+    <history-entry file="DormDaoTest_getDormListByBuildId - 2019.01.08 at 22h 33m 04s.xml">
+      <configuration name="DormDaoTest.getDormListByBuildId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DormDaoTest_getDormListByBuildIdAndFloorNumber - 2019.01.09 at 13h 28m 38s.xml">
+      <configuration name="DormDaoTest.getDormListByBuildIdAndFloorNumber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DormDaoTest_getDormLivedPeopleNumber - 2019.01.09 at 13h 28m 50s.xml">
+      <configuration name="DormDaoTest.getDormLivedPeopleNumber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DormDaoTest_getDormList - 2019.01.09 at 13h 28m 55s.xml">
+      <configuration name="DormDaoTest.getDormList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DormDaoTest_getDormListByBuildIdAndFloorNumber - 2019.01.09 at 13h 29m 27s.xml">
+      <configuration name="DormDaoTest.getDormListByBuildIdAndFloorNumber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DormDaoTest_getDormList - 2019.01.09 at 13h 29m 41s.xml">
+      <configuration name="DormDaoTest.getDormList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DormDaoTest_getDormList - 2019.01.09 at 13h 29m 54s.xml">
+      <configuration name="DormDaoTest.getDormList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DormDaoTest_getDormListByBuildIdAndFloorNumber - 2019.01.09 at 13h 30m 01s.xml">
+      <configuration name="DormDaoTest.getDormListByBuildIdAndFloorNumber" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4983000" />
+    <option name="totallyTimeSpent" value="12984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="23" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22310969" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18743344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -430,12 +547,12 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30151844" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1637744" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3286334" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32925338" />
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.36984816" />
       <window_info anchor="bottom" id="Terminal" order="10" />
@@ -450,8 +567,8 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.17305644" />
-      <window_info anchor="right" id="Database" order="7" weight="0.19169329" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.17305644" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.17571884" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
@@ -503,13 +620,6 @@
             <element signature="e#1579#1580#0" expanded="true" />
             <element signature="e#1623#1624#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/DormBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -603,13 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/GoodsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/PropertyDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -633,37 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f7e1eda5-2c7f-4764-9074-d9c48f416ea2/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/DormDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="252">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -672,8 +746,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+        <state relative-caret-position="189">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/DormBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Before.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/GoodsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2541">
+          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/DormDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="method#getDormList#0;class#DormDao#0" />
+            <element signature="method#getDormList#1;class#DormDao#0" />
+            <element signature="method#getDormList#2;class#DormDao#0" />
+            <element signature="method#getDormPeopleNumber#0;class#DormDao#0" />
+            <element signature="method#addPeopleToDorm#0;class#DormDao#0" />
+            <element signature="method#updateDormInfo#0;class#DormDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f7e1eda5-2c7f-4764-9074-d9c48f416ea2/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="46" selection-start-line="46" selection-end-line="46" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="150" column="50" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getConnection#0;class#DormDaoTest#0" />
+            <element signature="method#getDormList#0;class#DormDaoTest#0" />
+            <element signature="method#getDormLivedPerpleNumber#0;class#DormDaoTest#0" />
+            <element signature="method#addPeopleToDorm#0;class#DormDaoTest#0" />
+            <element signature="method#updateDormInfo#0;class#DormDaoTest#0" />
+            <element signature="method#getDormList1#0;class#DormDaoTest#0" />
+          </folding>
         </state>
       </provider>
     </entry>

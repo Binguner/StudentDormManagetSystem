@@ -10,7 +10,8 @@ public class DormBean {
     public DormBean() {
     }
 
-    public DormBean(int buildNumber, int floorNumber, int dormNumber, int peopleCount) {
+    public DormBean(int id,int buildNumber, int floorNumber, int dormNumber, int peopleCount) {
+        this.id = id;
         this.buildNumber = buildNumber;
         this.floorNumber = floorNumber;
         this.dormNumber = dormNumber;

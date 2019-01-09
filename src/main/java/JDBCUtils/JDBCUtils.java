@@ -16,7 +16,7 @@ public class JDBCUtils {
         if (null == connection){
             try {
                 Class.forName(Driver);
-                connection = DriverManager.getConnection(URL);
+                connection = DriverManager.getConnection(URL,username,password);
             } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();
             }

@@ -1209,7 +1209,7 @@
     </column>
     <column id="300" parent="280" name="studentID">
       <Position>2</Position>
-      <DataType>text|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="301" parent="280" name="studentName">
@@ -1247,39 +1247,48 @@
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="308" parent="280" name="PRIMARY">
+    <index id="308" parent="280" name="studentID">
+      <ColNames>studentID</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="309" parent="280" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="309" parent="281" name="id">
+    <key id="310" parent="280" name="studentID">
+      <ColNames>studentID</ColNames>
+      <UnderlyingIndexName>studentID</UnderlyingIndexName>
+    </key>
+    <column id="311" parent="281" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="281" name="visitorName">
+    <column id="312" parent="281" name="visitorName">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="281" name="visitorDate">
+    <column id="313" parent="281" name="visitorDate">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="312" parent="281" name="phone">
+    <column id="314" parent="281" name="phone">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="281" name="reason">
+    <column id="315" parent="281" name="reason">
       <Position>5</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="314" parent="281" name="PRIMARY">
+    <key id="316" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
