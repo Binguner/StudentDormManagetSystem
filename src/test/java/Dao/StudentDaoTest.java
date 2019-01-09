@@ -2,31 +2,32 @@ package Dao;
 
 import Bean.StudentBean;
 import JDBCUtils.JDBCUtils;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentDao {
+import static org.junit.Assert.*;
 
-    static Connection connection;
-    public StudentDao(){
-        if (null == connection){
-            connection = JDBCUtils.getConnection();
-        }
+public class StudentDaoTest {
+
+    private Connection connection;
+    @Test
+    @Before
+    public void getConnection(){
+        connection = JDBCUtils.getConnection();
     }
 
-    /**
-     * get all student info
-     * @return list of all student
-     */
-    public static List<StudentBean> getAllStudent(){
+    @Test
+    public void getAllStudent() {
         String sql = "select * from StudentTable;";
         List<StudentBean> list = new ArrayList<>();
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 StudentBean studentBean = new StudentBean();
                 studentBean.setId(resultSet.getInt(1));
                 studentBean.setStudentID(resultSet.getString(2));
@@ -39,15 +40,32 @@ public class StudentDao {
                 studentBean.setDormNumber(resultSet.getInt(9));
                 list.add(studentBean);
             }
-        } catch (SQLException e) {
+        } catch (
+                SQLException e) {
             e.printStackTrace();
         }
-        return list;
+        list.forEach(studentBean -> {
+            System.out.println(
+                    studentBean.getId() + " "
+                    + studentBean.getStudentID() + " "
+                    + studentBean.getStudentName() + " "
+                    + studentBean.getSex() + " "
+                    + studentBean.getMajorName() + " "
+                    + studentBean.getGrade() + " "
+                    + studentBean.getClassNum() + " "
+                    + studentBean.getBuildNumber() + " "
+                    + studentBean.getDormNumber()
+            );
+        });
     }
 
-    public boolean addStudent(StudentBean studentBean){
+    @Test
+    public void testAddStudent(){
+        StudentBean studentBean = new StudentBean(
+
+        );
         String sql = "insert into StudentTable(studentID, studentName, sex, majorName, grade, classNum, buildNumber, dormNumber) " +
-                "values(?,?,?,?,?,?,?,?);";
+                "values(?,?,?,?,?,?,?,?)";
         try {
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1,studentBean.getStudentID());
@@ -58,12 +76,10 @@ public class StudentDao {
             statement.setString(6,studentBean.getClassNum());
             statement.setInt(7,studentBean.getBuildNumber());
             statement.setInt(8,studentBean.getDormNumber());
+            statement.setInt(9,studentBean.getId());
             statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
         }
-        return true;
-
     }
 }

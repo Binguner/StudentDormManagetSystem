@@ -10,9 +10,10 @@ import java.util.List;
 public class DormDao {
 
     private static Connection connection;
-
     public DormDao(){
-        connection = JDBCUtils.getConnection();
+        if (null == connection) {
+            connection = JDBCUtils.getConnection();
+        }
     }
 
     /**

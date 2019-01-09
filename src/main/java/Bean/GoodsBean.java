@@ -5,16 +5,17 @@ public class GoodsBean {
     private int buildNumber;
     private String goodsName;
     private String goodsDate;
-    private String goodsDetial;
+    private String goodsDetail;
 
     public GoodsBean() {
     }
 
-    public GoodsBean(int buildNumber, String goodsName, String goodsDate, String goodsDetial) {
+    public GoodsBean(int id, int buildNumber, String goodsName, String goodsDate, String goodsDetail) {
+        this.id = id;
         this.buildNumber = buildNumber;
         this.goodsName = goodsName;
         this.goodsDate = goodsDate;
-        this.goodsDetial = goodsDetial;
+        this.goodsDetail = goodsDetail;
     }
 
     public int getId() {
@@ -49,11 +50,11 @@ public class GoodsBean {
         this.goodsDate = goodsDate;
     }
 
-    public String getGoodsDetial() {
-        return goodsDetial;
+    public String getGoodsDetail() {
+        return goodsDetail;
     }
 
-    public void setGoodsDetial(String goodsDetial) {
-        this.goodsDetial = goodsDetial;
+    public void setGoodsDetail(String goodsDetail) {
+        this.goodsDetail = goodsDetail;
     }
 }

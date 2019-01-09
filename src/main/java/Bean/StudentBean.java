@@ -14,7 +14,8 @@ public class StudentBean {
     public StudentBean() {
     }
 
-    public StudentBean(String studentID, String studentName, String sex, String majorName, int grade, String classNum, int buildNumber, int dormNumber) {
+    public StudentBean(int id, String studentID, String studentName, String sex, String majorName, int grade, String classNum, int buildNumber, int dormNumber) {
+        this.id = id;
         this.studentID = studentID;
         this.studentName = studentName;
         this.sex = sex;

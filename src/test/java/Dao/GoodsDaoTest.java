@@ -2,27 +2,26 @@ package Dao;
 
 import Bean.GoodsBean;
 import JDBCUtils.JDBCUtils;
+import org.junit.Before;
+import org.junit.Test;
 
-import javax.naming.ldap.PagedResultsControl;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-public class GoodsDao {
+import static org.junit.Assert.*;
 
-    static Connection connection = null;
-    public GoodsDao(){
-        if (null == connection){
-            connection = JDBCUtils.getConnection();
-        }
+public class GoodsDaoTest {
+
+    private Connection connection;
+    @Before
+    @Test
+    public void getConnection(){
+        connection = JDBCUtils.getConnection();
     }
 
-    /**
-     * get all goods list
-     * @return all good's list
-     */
-    public static List<GoodsBean> getAllGoodsList(){
+    @Test
+    public void getAllGoodsList() {
         List<GoodsBean> list = new ArrayList<>();
         String sql = "select * from GoodsTable;";
         try {
@@ -40,42 +39,45 @@ public class GoodsDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return list;
+        list.forEach(goodsBean -> {
+            System.out.println(
+                    goodsBean.getId() + " "
+                    + goodsBean.getBuildNumber() + " "
+                    + goodsBean.getGoodsName() + " "
+                    + goodsBean.getGoodsDate() + " "
+                    + goodsBean.getGoodsDetail());
+        });
     }
 
-    /**
-     * insert a goods information to GoodsTable
-     * @param buildNumber buildNumber
-     * @param goodsName good's name
-     * @param goodsDate goods date (String)
-     * @param goodsDetail good's detail
-     * @return insert success return true, else false
-     */
-    public static boolean insertGood(int buildNumber,String goodsName,String goodsDate,String goodsDetail){
+    @Test
+    public void insertGood() {
+        int buildNumber = 2;
+        String goodsName = "这几个";
+        String goodsDate = "2015-3-3";
+        String goodsDetail = "路好谈芭比娃娃";
         String sql = "insert into GoodsTable(buildNumber, goodsName, goodsDate, goodsDetail) " +
-                "values(?,?,?,?)";
-        boolean flag = true;
+                "values(?,?,?,?);";
         try {
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setInt(1,buildNumber);
             statement.setString(2,goodsName);
             statement.setString(3,goodsDate);
             statement.setString(4,goodsDetail);
-            flag = statement.execute();
+            statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
         }
-        return flag;
     }
 
-    /**
-     * update one good's info by its id
-     * @param goodsBean goodsbean
-     * @return if success return true,else false
-     */
-    public static boolean updateGoodsInfo(GoodsBean goodsBean){
-        //String sql = "select * from GoodsTable where id=?";
+    @Test
+    public void testUpdateGoodIndo(){
+        GoodsBean goodsBean = new GoodsBean(
+                4,
+                4,
+                "PC",
+                "2013-3-4",
+                "test"
+        );
         String sql = "update GoodsTable set buildNumber=?, goodsName=?,goodsDate=?,goodsDetail=? where id=?";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -87,10 +89,6 @@ public class GoodsDao {
             preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
         }
-        return true;
     }
-
-
 }
