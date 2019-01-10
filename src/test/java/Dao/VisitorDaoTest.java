@@ -2,23 +2,27 @@ package Dao;
 
 import Bean.VisitorBean;
 import JDBCUtils.JDBCUtils;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VisitorDao {
+import static org.junit.Assert.*;
 
-    private static Connection connection;
-    public VisitorDao(){
-        connection=(Connection) JDBCUtils.getConnection();
+public class VisitorDaoTest {
+
+    private Connection connection;
+
+    @Test
+    @Before
+    public void getConnection(){
+        connection = JDBCUtils.getConnection();
     }
 
-    /**
-     * get all visitor
-     * @return all visitor
-     */
-    public List<VisitorBean> getAllVisitor() {
+    @Test
+    public void getAllVisitor() {
         List<VisitorBean> list=new ArrayList<>();
         try{
             String sql="select * from VisitorTable";
@@ -39,15 +43,12 @@ public class VisitorDao {
         }catch(SQLException e) {
             e.printStackTrace();
         }
-        return list;
+        printList(list);
     }
 
-    /**
-     * get visitor list by build Id
-     * @param buildNumber build number
-     * @return the list of this build's visitor
-     */
-    public List<VisitorBean> getVisitorByBuildId(int buildNumber) {
+    @Test
+    public void getVisitorByBuildId() {
+        int buildNumber = 1;
         List<VisitorBean> list=new ArrayList<>();
         String sql="select * from VisitorTable where buildNumber=(?)";
         try{
@@ -67,15 +68,12 @@ public class VisitorDao {
         }catch(Exception e) {
             e.printStackTrace();
         }
-        return list;
+        printList(list);
     }
 
-    /**
-     * get visitor list by Date
-     * @param date the date
-     * @return This day's all visitor information
-     */
-    public List<VisitorBean> getVisitorByDate(String date) {
+    @Test
+    public void getVisitorByDate() {
+        String date = "2014-04-05";
         List<VisitorBean> list=new ArrayList<>();
         String sql="select * from VisitorTable where visitorDate=(?)";
         try{
@@ -95,16 +93,15 @@ public class VisitorDao {
         }catch(SQLException e) {
             e.printStackTrace();
         }
-        return list;
+        printList(list);
     }
 
-    /**
-     * get this build and this day's all visitor list
-     * @param buildNumber build number
-     * @param date date
-     * @return this building and this's days all visitor list
-     */
-    public List<VisitorBean> getVisitorByBuildIdAndDate(int buildNumber,String date) {
+    @Test
+    public void getVisitorByBuildIdAndDate() {
+        //int buildNumber = 1;
+        int buildNumber = 3;
+        String date = "2012-02-03";
+        //String date = "2014-04-05";
         String sql="select * from VisitorTable where buildNumber=(?) and visitorDate=(?)";
         List<VisitorBean> list=new ArrayList<>();
         try{
@@ -124,20 +121,18 @@ public class VisitorDao {
             }
         }catch(SQLException e) {
             e.printStackTrace();
+            System.out.println("wrong");
         }
-        return list;
+        printList(list);
     }
 
-    /**
-     * add a visitor to VisitorTable
-     * @param buildNumber build number
-     * @param visitorName visitor number
-     * @param visitorDate visit date
-     * @param phone visitor's phone number
-     * @param reason the reason
-     * @return boolean: if success return true,else false
-     */
-    public boolean addVistor(int buildNumber,String visitorName,String visitorDate,String phone,String reason) {
+    @Test
+    public void addVistor() {
+        int buildNumber = 1;
+        String visitorName = "Test";
+        String visitorDate = "2014-4-5";
+        String phone = "123456";
+        String reason = "rer";
         String sql="insert into VisitorTable(buildNumber,visitorName,visitorDate,phone,reason) values(?,?,?,?,?)";
         try{
             PreparedStatement statement=connection.prepareStatement(sql);
@@ -149,8 +144,20 @@ public class VisitorDao {
             statement.execute();
         }catch(SQLException e){
             e.printStackTrace();
-            return false;
         }
-        return true;
+
+    }
+
+    private void printList(List<VisitorBean> list){
+        list.forEach(visitorBean -> {
+            System.out.println(
+                    visitorBean.getId() + " "
+                    + visitorBean.getBuildNumber() + " "
+                    + visitorBean.getVisitorName() + " "
+                    + visitorBean.getVisitorDate() + " "
+                    + visitorBean.getPhone() + " "
+                    + visitorBean.getReason()
+            );
+        });
     }
 }

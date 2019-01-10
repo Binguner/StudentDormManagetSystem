@@ -2,12 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6c4baf1-3a44-4e48-919a-4afb02b8148d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f7e1eda5-2c7f-4764-9074-d9c48f416ea2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f7e1eda5-2c7f-4764-9074-d9c48f416ea2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bean/GoodsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/GoodsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bean/StudentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/StudentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Bean/PropertyBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Bean/PropertyBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Bean/VisitorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Bean/VisitorBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Dao/DormDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Dao/DormDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Dao/PropertyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Dao/PropertyDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Dao/StudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Dao/VisitorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Dao/VisitorDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JDBCUtils/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JDBCUtils/JDBCUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Dao/StudentDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/Dao/StudentDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bean/PropertyBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/PropertyBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bean/VisitorBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/VisitorBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DormDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DormDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/GoodsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/PropertyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/PropertyDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/VisitorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/VisitorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -32,25 +56,18 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="B_server" type="feb32156:DbDataSourceImpl" />
+        <item name="StudentDorm@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="B_server" type="feb32156:DbDataSourceImpl" />
+        <item name="StudentDorm@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="B_server" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="StuentDormManagerDB: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="B_server" type="feb32156:DbDataSourceImpl" />
+        <item name="StudentDorm@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="StuentDormManagerDB: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="DormTable: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -93,57 +110,18 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f7e1eda5-2c7f-4764-9074-d9c48f416ea2/console.sql">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/232b00a1-2a3b-4bb0-8fe6-18328b48fd7e/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/StudentDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+            <state relative-caret-position="-46">
+              <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getAllStudent#0;class#StudentDao#0" />
+                <element signature="e#76#530#0" />
+                <element signature="e#533#799#0" />
+                <element signature="e#801#1111#0" />
+                <element signature="e#1113#1258#0" />
+                <element signature="e#1261#1385#0" />
+                <element signature="e#1607#1750#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="65" column="10" lean-forward="true" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
-              <folding>
-                <element signature="method#getAllStudent#0;class#StudentDaoTest#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bean/StudentBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
-              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              <folding>
-                <element signature="e#1679#1680#0" expanded="true" />
-                <element signature="e#1710#1711#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/PropertyDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -151,8 +129,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dao/VisitorDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="840">
+              <caret line="104" column="61" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#105#106#0" expanded="true" />
+                <element signature="e#170#171#0" expanded="true" />
+                <element signature="method#getAllVisitor#0;class#VisitorDao#0" />
+                <element signature="method#getVistorByBuildId#0;class#VisitorDao#0" />
+                <element signature="method#getVisitorByDate#0;class#VisitorDao#0" />
+                <element signature="method#getVisitorByBuildIdAndDate#0;class#VisitorDao#0" />
+                <element signature="method#addVistor#0;class#VisitorDao#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Dao/VisitorDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
+              <folding>
+                <element signature="e#318#319#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="method#getAllVisitor#0;class#VisitorDaoTest#0" />
+                <element signature="method#getVistorByBuildId#0;class#VisitorDaoTest#0" />
+                <element signature="method#getVisitorByDate#0;class#VisitorDaoTest#0" />
+                <element signature="method#getVisitorByBuildIdAndDate#0;class#VisitorDaoTest#0" />
+                <element signature="method#addVistor#0;class#VisitorDaoTest#0" />
+                <element signature="method#printList#0;class#VisitorDaoTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Bean/ManagerBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <folding>
+                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -162,8 +196,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -178,20 +214,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Bean/VisitorBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Bean/PropertyBean.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/DormBean.java" />
         <option value="$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/GoodsBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Dao/DormDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/Dao/GoodsDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/StudentBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dao/GoodsDao.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f7e1eda5-2c7f-4764-9074-d9c48f416ea2/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/Dao/StudentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/DormDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/StudentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/PropertyBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/PropertyDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Dao/PropertyDaoTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f7e1eda5-2c7f-4764-9074-d9c48f416ea2/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/VisitorBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Dao/VisitorDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/VisitorDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/ManagerDao.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/232b00a1-2a3b-4bb0-8fe6-18328b48fd7e/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/ManagerBEan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/ManagerBean.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
       </list>
     </option>
   </component>
@@ -202,9 +248,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -244,29 +290,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudentDorm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudentDorm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudentDorm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudentDorm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="JDBCUtils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudentDorm" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudentDorm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -277,12 +308,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547018484996" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547103174310" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -310,8 +342,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StudentDaoTest.getAllStudent">
-    <configuration name="GoodsDaoTest.getAllGoodsList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.VisitorDaoTest.getVisitorByBuildIdAndDate">
+    <configuration name="VisitorDaoTest.getAllVisitor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.binguner.StudentDorm.test" />
       <extension name="coverage">
         <pattern>
@@ -320,14 +352,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Dao" />
-      <option name="MAIN_CLASS_NAME" value="Dao.GoodsDaoTest" />
-      <option name="METHOD_NAME" value="getAllGoodsList" />
+      <option name="MAIN_CLASS_NAME" value="Dao.VisitorDaoTest" />
+      <option name="METHOD_NAME" value="getAllVisitor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoodsDaoTest.insertGood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VisitorDaoTest.getVisitorByBuildId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.binguner.StudentDorm.test" />
       <extension name="coverage">
         <pattern>
@@ -336,14 +368,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Dao" />
-      <option name="MAIN_CLASS_NAME" value="Dao.GoodsDaoTest" />
-      <option name="METHOD_NAME" value="insertGood" />
+      <option name="MAIN_CLASS_NAME" value="Dao.VisitorDaoTest" />
+      <option name="METHOD_NAME" value="getVisitorByBuildId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoodsDaoTest.testUpdateGoodIndo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VisitorDaoTest.getVisitorByBuildIdAndDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.binguner.StudentDorm.test" />
       <extension name="coverage">
         <pattern>
@@ -352,14 +384,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Dao" />
-      <option name="MAIN_CLASS_NAME" value="Dao.GoodsDaoTest" />
-      <option name="METHOD_NAME" value="testUpdateGoodIndo" />
+      <option name="MAIN_CLASS_NAME" value="Dao.VisitorDaoTest" />
+      <option name="METHOD_NAME" value="getVisitorByBuildIdAndDate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDaoTest.getAllStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VisitorDaoTest.getVisitorByDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.binguner.StudentDorm.test" />
       <extension name="coverage">
         <pattern>
@@ -368,14 +400,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Dao" />
-      <option name="MAIN_CLASS_NAME" value="Dao.StudentDaoTest" />
-      <option name="METHOD_NAME" value="getAllStudent" />
+      <option name="MAIN_CLASS_NAME" value="Dao.VisitorDaoTest" />
+      <option name="METHOD_NAME" value="getVisitorByDate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDaoTest.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VisitorDaoTest.getVistorByBuildId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.binguner.StudentDorm.test" />
       <extension name="coverage">
         <pattern>
@@ -384,8 +416,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Dao" />
-      <option name="MAIN_CLASS_NAME" value="Dao.StudentDaoTest" />
-      <option name="METHOD_NAME" value="getConnection" />
+      <option name="MAIN_CLASS_NAME" value="Dao.VisitorDaoTest" />
+      <option name="METHOD_NAME" value="getVistorByBuildId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -466,11 +498,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StudentDaoTest.getAllStudent" />
-        <item itemvalue="JUnit.StudentDaoTest.getConnection" />
-        <item itemvalue="JUnit.GoodsDaoTest.getAllGoodsList" />
-        <item itemvalue="JUnit.GoodsDaoTest.testUpdateGoodIndo" />
-        <item itemvalue="JUnit.GoodsDaoTest.insertGood" />
+        <item itemvalue="JUnit.VisitorDaoTest.getVisitorByBuildIdAndDate" />
+        <item itemvalue="JUnit.VisitorDaoTest.getVisitorByBuildId" />
+        <item itemvalue="JUnit.VisitorDaoTest.getVisitorByDate" />
+        <item itemvalue="JUnit.VisitorDaoTest.getVistorByBuildId" />
+        <item itemvalue="JUnit.VisitorDaoTest.getAllVisitor" />
       </list>
     </recent_temporary>
   </component>
@@ -486,47 +518,47 @@
       <updated>1546939777846</updated>
       <workItem from="1546939782489" duration="1160000" />
       <workItem from="1546946930108" duration="1012000" />
-      <workItem from="1546948561804" duration="15840000" />
+      <workItem from="1546948561804" duration="32062000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GoodsDaoTest_insertGood - 2019.01.09 at 14h 41m 31s.xml">
-      <configuration name="GoodsDaoTest.insertGood" configurationId="JUnit" />
+    <history-entry file="VisitorDaoTest_getVistorByBuildId - 2019.01.10 at 14h 26m 32s.xml">
+      <configuration name="VisitorDaoTest.getVistorByBuildId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsDaoTest_getAllGoodsList - 2019.01.09 at 14h 41m 37s.xml">
-      <configuration name="GoodsDaoTest.getAllGoodsList" configurationId="JUnit" />
+    <history-entry file="VisitorDaoTest_getVisitorByDate - 2019.01.10 at 14h 29m 26s.xml">
+      <configuration name="VisitorDaoTest.getVisitorByDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsDaoTest_insertGood - 2019.01.09 at 14h 41m 53s.xml">
-      <configuration name="GoodsDaoTest.insertGood" configurationId="JUnit" />
+    <history-entry file="VisitorDaoTest_getVisitorByDate - 2019.01.10 at 14h 29m 35s.xml">
+      <configuration name="VisitorDaoTest.getVisitorByDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsDaoTest_getAllGoodsList - 2019.01.09 at 14h 41m 57s.xml">
-      <configuration name="GoodsDaoTest.getAllGoodsList" configurationId="JUnit" />
+    <history-entry file="VisitorDaoTest_getVisitorByBuildId - 2019.01.10 at 14h 29m 44s.xml">
+      <configuration name="VisitorDaoTest.getVisitorByBuildId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsDaoTest_insertGood - 2019.01.09 at 14h 42m 13s.xml">
-      <configuration name="GoodsDaoTest.insertGood" configurationId="JUnit" />
+    <history-entry file="VisitorDaoTest_getVisitorByBuildIdAndDate - 2019.01.10 at 14h 31m 22s.xml">
+      <configuration name="VisitorDaoTest.getVisitorByBuildIdAndDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsDaoTest_getAllGoodsList - 2019.01.09 at 14h 42m 16s.xml">
-      <configuration name="GoodsDaoTest.getAllGoodsList" configurationId="JUnit" />
+    <history-entry file="VisitorDaoTest_getVisitorByBuildIdAndDate - 2019.01.10 at 14h 35m 36s.xml">
+      <configuration name="VisitorDaoTest.getVisitorByBuildIdAndDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsDaoTest_testUpdateGoodIndo - 2019.01.09 at 14h 51m 49s.xml">
-      <configuration name="GoodsDaoTest.testUpdateGoodIndo" configurationId="JUnit" />
+    <history-entry file="VisitorDaoTest_getVisitorByBuildIdAndDate - 2019.01.10 at 14h 35m 55s.xml">
+      <configuration name="VisitorDaoTest.getVisitorByBuildIdAndDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsDaoTest_getAllGoodsList - 2019.01.09 at 14h 51m 54s.xml">
-      <configuration name="GoodsDaoTest.getAllGoodsList" configurationId="JUnit" />
+    <history-entry file="VisitorDaoTest_getVisitorByBuildIdAndDate - 2019.01.10 at 14h 36m 26s.xml">
+      <configuration name="VisitorDaoTest.getVisitorByBuildIdAndDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDaoTest_getConnection - 2019.01.09 at 15h 08m 27s.xml">
-      <configuration name="StudentDaoTest.getConnection" configurationId="JUnit" />
+    <history-entry file="VisitorDaoTest_getVisitorByBuildIdAndDate - 2019.01.10 at 14h 36m 37s.xml">
+      <configuration name="VisitorDaoTest.getVisitorByBuildIdAndDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDaoTest_getAllStudent - 2019.01.09 at 15h 10m 39s.xml">
-      <configuration name="StudentDaoTest.getAllStudent" configurationId="JUnit" />
+    <history-entry file="VisitorDaoTest_getVisitorByBuildIdAndDate - 2019.01.10 at 14h 36m 56s.xml">
+      <configuration name="VisitorDaoTest.getVisitorByBuildIdAndDate" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18012000" />
+    <option name="totallyTimeSpent" value="34234000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21489622" />
@@ -539,14 +571,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20490928" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25506938" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3276414" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32678387" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32925338" />
-      <window_info anchor="bottom" id="Database Console" order="9" visible="true" weight="0.36392742" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32870865" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -570,71 +602,10 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Bean/Student.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/PropertyBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/VisitorBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
-          <folding>
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://f7e1eda5-2c7f-4764-9074-d9c48f416ea2/schema/StuentDormManagerDB/table/PropertyTable">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/VisitorDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -659,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -683,65 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/GoodsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1218#1219#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bean/DormBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/DormDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getDormList#0;class#DormDao#0" />
-            <element signature="method#getDormList#1;class#DormDao#0" />
-            <element signature="method#getDormList#2;class#DormDao#0" />
-            <element signature="method#getDormPeopleNumber#0;class#DormDao#0" />
-            <element signature="method#addPeopleToDorm#0;class#DormDao#0" />
-            <element signature="method#updateDormInfo#0;class#DormDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,10 +668,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/StudentBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#1679#1680#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/GoodsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="303">
+          <caret line="53" column="41" lean-forward="true" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getAllGoodsList#0;class#GoodsDao#0" />
@@ -772,49 +692,228 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/PropertyDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/DormDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f7e1eda5-2c7f-4764-9074-d9c48f416ea2/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        <state relative-caret-position="218">
+          <caret line="117" column="53" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getAllStudent#0;class#StudentDao#0" />
+            <element signature="method#getDormList#0;class#DormDao#0" />
+            <element signature="method#getDormList#1;class#DormDao#0" />
+            <element signature="method#getDormList#2;class#DormDao#0" />
+            <element signature="method#getDormPeopleNumber#0;class#DormDao#0" />
+            <element signature="method#addPeopleToDorm#0;class#DormDao#0" />
+            <element signature="method#updateDormInfo#0;class#DormDao#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="137" column="22" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="65" column="10" lean-forward="true" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
+        <state relative-caret-position="455">
+          <caret line="274" column="39" selection-start-line="274" selection-start-column="39" selection-end-line="274" selection-end-column="39" />
           <folding>
             <element signature="method#getAllStudent#0;class#StudentDaoTest#0" />
+            <element signature="method#testAddStudent#0;class#StudentDaoTest#0" />
+            <element signature="method#testGetStudentListByMajorName#0;class#StudentDaoTest#0" />
+            <element signature="method#testGetStudentListByDormNumber#0;class#StudentDaoTest#0" />
+            <element signature="method#testGetStudentListByGradeAndClassNum#0;class#StudentDaoTest#0" />
+            <element signature="method#testGetThisStudent#0;class#StudentDaoTest#0" />
+            <element signature="method#getStudentListByBuildNumber#0;class#StudentDaoTest#0" />
+            <element signature="method#getStudentListBySex#0;class#StudentDaoTest#0" />
+            <element signature="method#getStudentListByGrade#0;class#StudentDaoTest#0" />
+            <element signature="method#soutStudents#0;class#StudentDaoTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/StudentBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/StudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="809">
+          <caret line="180" column="68" selection-start-line="180" selection-start-column="36" selection-end-line="180" selection-end-column="68" />
           <folding>
-            <element signature="e#1679#1680#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#getAllStudent#0;class#StudentDao#0" />
+            <element signature="method#addStudent#0;class#StudentDao#0" />
+            <element signature="method#getStudentsList#0;class#StudentDao#0" />
+            <element signature="method#getStudentList#0;class#StudentDao#0" />
+            <element signature="method#getStudentList#1;class#StudentDao#0" />
+            <element signature="method#getThisStudent#0;class#StudentDao#0" />
+            <element signature="method#getStudentListByBuildNumer#0;class#StudentDao#0" />
+            <element signature="method#getStudentListBySex#0;class#StudentDao#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/PropertyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#108#109#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="method#getAllPropertyList#0;class#PropertyDao#0" />
+            <element signature="method#getBuildProperty#0;class#PropertyDao#0" />
+            <element signature="method#updatePropertyInfo#0;class#PropertyDao#0" />
+            <element signature="method#addPropertyInfo#0;class#PropertyDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Dao/PropertyDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="method#getAllPropertyList#0;class#PropertyDaoTest#0" />
+            <element signature="method#addPropertyInfo#0;class#PropertyDaoTest#0" />
+            <element signature="method#testGetPropertyInfoByBuildId#0;class#PropertyDaoTest#0" />
+            <element signature="method#testUpdatePropertyInfo#0;class#PropertyDaoTest#0" />
+            <element signature="method#printProperty#0;class#PropertyDaoTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/PropertyBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/GoodsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/VisitorBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f7e1eda5-2c7f-4764-9074-d9c48f416ea2/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="43" column="13" lean-forward="true" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JDBCUtils/JDBCUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/VisitorDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="104" column="61" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#105#106#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="method#getAllVisitor#0;class#VisitorDao#0" />
+            <element signature="method#getVistorByBuildId#0;class#VisitorDao#0" />
+            <element signature="method#getVisitorByDate#0;class#VisitorDao#0" />
+            <element signature="method#getVisitorByBuildIdAndDate#0;class#VisitorDao#0" />
+            <element signature="method#addVistor#0;class#VisitorDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Dao/VisitorDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="method#getAllVisitor#0;class#VisitorDaoTest#0" />
+            <element signature="method#getVistorByBuildId#0;class#VisitorDaoTest#0" />
+            <element signature="method#getVisitorByDate#0;class#VisitorDaoTest#0" />
+            <element signature="method#getVisitorByBuildIdAndDate#0;class#VisitorDaoTest#0" />
+            <element signature="method#addVistor#0;class#VisitorDaoTest#0" />
+            <element signature="method#printList#0;class#VisitorDaoTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/232b00a1-2a3b-4bb0-8fe6-18328b48fd7e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="27" />
+          <folding>
+            <element signature="e#76#530#0" />
+            <element signature="e#533#799#0" />
+            <element signature="e#801#1111#0" />
+            <element signature="e#1113#1258#0" />
+            <element signature="e#1261#1385#0" />
+            <element signature="e#1607#1750#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/ManagerBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>

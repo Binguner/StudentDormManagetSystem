@@ -9,7 +9,8 @@ public class PropertyBean {
     public PropertyBean() {
     }
 
-    public PropertyBean(int buildNumber, String goodName, Float price) {
+    public PropertyBean(int id,int buildNumber, String goodName, Float price) {
+        this.id = id;
         this.buildNumber = buildNumber;
         this.goodName = goodName;
         this.price = price;

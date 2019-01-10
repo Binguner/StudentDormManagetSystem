@@ -27,6 +27,7 @@ public class DormDao {
             ResultSet resultSet = statement.executeQuery(sql);
             while (resultSet.next()){
                 DormBean dormBean = new DormBean();
+                dormBean.setId(resultSet.getInt(1));
                 dormBean.setBuildNumber(resultSet.getInt(2));
                 dormBean.setFloorNumber(resultSet.getInt(3));
                 dormBean.setDormNumber(resultSet.getInt(4));

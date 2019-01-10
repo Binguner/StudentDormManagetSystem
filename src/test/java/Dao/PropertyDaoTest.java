@@ -2,26 +2,29 @@ package Dao;
 
 import Bean.PropertyBean;
 import JDBCUtils.JDBCUtils;
+import org.junit.Before;
+import org.junit.Test;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.Statement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.sql.Connection;
 
-public class PropertyDao {
-    private static Connection connection;
+import static org.junit.Assert.*;
 
-    public PropertyDao(){
-        connection = (Connection) JDBCUtils.getConnection();
+public class PropertyDaoTest {
+
+    private Connection connection;
+    @Test
+    @Before
+    public void getConnection(){
+        connection = JDBCUtils.getConnection();
     }
 
-    /**
-     * get all property list
-     * @return all property list
-     */
-    public List<PropertyBean> getAllPropertyList(){
+    @Test
+    public void getAllPropertyList() {
         String sql = "select * from PropertyTable";
         List<PropertyBean> list = new ArrayList<>();
         try{
@@ -38,21 +41,36 @@ public class PropertyDao {
         }catch(Exception e) {
             e.printStackTrace();
         }
-        return list;
+        printProperty(list);
     }
 
-    /**
-     * get this build's property
-     * @param buildNumber one build's number
-     * @return this build's all property information
-     */
-    public List<PropertyBean> getBuildProperty(int buildNumber){
+    @Test
+    public void addPropertyInfo() {
+        int buildNumber = 2;
+        String goodName = "iPhone";
+        float price = 134.5F;
+        try{
+            String sql = "insert into PropertyTable(buildNumber,goodName,price) values (?,?,?)";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setInt(1,buildNumber);
+            statement.setString(2,goodName);
+            statement.setFloat(3,price);
+            statement.execute();
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testGetPropertyInfoByBuildId(){
+        int buildNumber = 2;
         List<PropertyBean> list=new ArrayList<>();
-        String sql="select * from PropertyTable where buildNumber=?";
+        //String sql="select * from PropertyTable where buildNumber=?";
+        String sql = "select * from PropertyTable where buildNumber=?";
         try{
             PreparedStatement statement= connection.prepareStatement(sql);
             statement.setInt(1, buildNumber);
-            ResultSet resultSet=statement.executeQuery(sql);
+            ResultSet resultSet=statement.executeQuery();
             while(resultSet.next())
             {
                 PropertyBean property=new PropertyBean();
@@ -66,15 +84,17 @@ public class PropertyDao {
         {
             e.printStackTrace();
         }
-        return list;
+        printProperty(list);
     }
 
-    /**
-     * change a property information
-     * @param property propertyBean
-     * @return boolean: update success return true,else false
-     */
-    public boolean updatePropertyInfo(PropertyBean property){
+    @Test
+    public void testUpdatePropertyInfo(){
+        PropertyBean property = new PropertyBean(
+                1,
+                1,
+                "PXP",
+                4443.4F
+        );
         try{
             String sql="update PropertyTable set buildNumber=(?),goodName=(?),price=(?) where id=(?)";
             PreparedStatement statement=connection.prepareStatement(sql);
@@ -85,30 +105,17 @@ public class PropertyDao {
             statement.execute();
         }catch(Exception e) {
             e.printStackTrace();
-            return false;
         }
-        return true;
     }
 
-    /**
-     * add a property to PropertyTable
-     * @param buildNumber property's build number
-     * @param goodName property's goodName
-     * @param price property's price
-     * @return boolean: insert success true, failed false
-     */
-    public boolean addPropertyInfo(int buildNumber,String goodName,float price) {
-        try{
-            String sql = "insert into PropertyTable(buildNumber,goodName,price) values (?,?,?)";
-            PreparedStatement statement = connection.prepareStatement(sql);
-            statement.setInt(1,buildNumber);
-            statement.setString(2,goodName);
-            statement.setFloat(3,price);
-            statement.execute();
-        }catch(Exception e) {
-            e.printStackTrace();
-            return false;
-        }
-        return true;
+    private void printProperty(List<PropertyBean> list){
+        list.forEach(propertyBean -> {
+            System.out.println(
+                    propertyBean.getId() + " "
+                    + propertyBean.getBuildNumber() + " "
+                    + propertyBean.getGoodName() + " "
+                    + propertyBean.getPrice()
+             );
+        });
     }
 }
