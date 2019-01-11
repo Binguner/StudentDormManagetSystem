@@ -14,6 +14,7 @@ public class JDBCUtils {
     private static final String URL = "jdbc:mysql://localhost:3306/StuentDormManagerDB";
     private static Connection connection;
 
+
     public static Connection getConnection(){
         if (null == connection){
             try {
