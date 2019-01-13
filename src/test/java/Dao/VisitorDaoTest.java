@@ -2,9 +2,11 @@ package Dao;
 
 import Bean.VisitorBean;
 import JDBCUtils.JDBCUtils;
+import com.alibaba.fastjson.JSONReader;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.StringReader;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -160,4 +162,94 @@ public class VisitorDaoTest {
             );
         });
     }
+
+
+    String jsonString = "{\"array\":[1,2,3],\"arraylist\":[{\"a\":\"b\",\"c\":\"d\",\"e\":\"f\"},{\"a\":\"b\",\"c\":\"d\",\"e\":\"f\"},{\"a\":\"b\",\"c\":\"d\",\"e\":\"f\"}],\"object\":{\"a\":\"b\",\"c\":\"d\",\"e\":\"f\"},\"string\":\"HelloWorld\"}";
+
+
+    @Test
+    public void testJSON(){
+        JSONReader reader = new JSONReader(new StringReader(jsonString));
+        reader.startObject();
+        System.out.println("start fastjson");
+        while (reader.hasNext())
+        {
+            String key = reader.readString();
+            System.out.println("key " + key);
+            if (key.equals("array"))
+            {
+                reader.startArray();
+                System.out.println("start " + key);
+                while (reader.hasNext())
+                {
+                    String item = reader.readString();
+                    System.out.println(item);
+                }
+                reader.endArray();
+                System.out.println("end " + key);
+            }
+            else if (key.equals("arraylist"))
+            {
+                reader.startArray();
+                System.out.println("start " + key);
+                while (reader.hasNext())
+                {
+                    reader.startObject();
+                    System.out.println("start arraylist item");
+                    while (reader.hasNext())
+                    {
+                        String arrayListItemKey = reader.readString();
+                        String arrayListItemValue = reader.readObject().toString();
+                        System.out.println("key " + arrayListItemKey);
+                        System.out.println("value " + arrayListItemValue);
+                    }
+                    reader.endObject();
+                    System.out.println("end arraylist item");
+                }
+                reader.endArray();
+                System.out.println("end " + key);
+            }
+            else if (key.equals("object"))
+            {
+                reader.startObject();
+                System.out.println("start object item");
+                while (reader.hasNext())
+                {
+                    String objectKey = reader.readString();
+                    String objectValue = reader.readObject().toString();
+                    System.out.println("key " + objectKey);
+                    System.out.println("value " + objectValue);
+                }
+                reader.endObject();
+                System.out.println("end object item");
+            }
+            else if (key.equals("string"))
+            {
+                System.out.println("start string");
+                String value = reader.readObject().toString();
+                System.out.println("value " + value);
+                System.out.println("end string");
+            }
+        }
+        reader.endObject();
+        System.out.println("start fastjson");
+    }
+
+    @Test
+    public void deleteVisitor(){
+        int id = 5;
+        String sql = "delete from VisitorTable where id=?";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,id);
+            if (preparedStatement.execute()){
+                System.out.println("wrong");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("wrong");
+        }
+        //System.out.println("false");
+    }
+
 }

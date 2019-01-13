@@ -10,15 +10,22 @@ import java.util.List;
 public class VisitorDao {
 
     private static Connection connection;
+    static {
+        if (null == connection) {
+            connection = (Connection) JDBCUtils.getConnection();
+        }
+    }
     public VisitorDao(){
-        connection=(Connection) JDBCUtils.getConnection();
+        if (null == connection) {
+            connection = (Connection) JDBCUtils.getConnection();
+        }
     }
 
     /**
      * get all visitor
      * @return all visitor
      */
-    public List<VisitorBean> getAllVisitor() {
+    public static List<VisitorBean> getAllVisitor() {
         List<VisitorBean> list=new ArrayList<>();
         try{
             String sql="select * from VisitorTable";
@@ -47,7 +54,7 @@ public class VisitorDao {
      * @param buildNumber build number
      * @return the list of this build's visitor
      */
-    public List<VisitorBean> getVisitorByBuildId(int buildNumber) {
+    public static List<VisitorBean> getVisitorByBuildId(int buildNumber) {
         List<VisitorBean> list=new ArrayList<>();
         String sql="select * from VisitorTable where buildNumber=(?)";
         try{
@@ -75,7 +82,7 @@ public class VisitorDao {
      * @param date the date
      * @return This day's all visitor information
      */
-    public List<VisitorBean> getVisitorByDate(String date) {
+    public static List<VisitorBean> getVisitorByDate(String date) {
         List<VisitorBean> list=new ArrayList<>();
         String sql="select * from VisitorTable where visitorDate=(?)";
         try{
@@ -104,7 +111,7 @@ public class VisitorDao {
      * @param date date
      * @return this building and this's days all visitor list
      */
-    public List<VisitorBean> getVisitorByBuildIdAndDate(int buildNumber,String date) {
+    public static List<VisitorBean> getVisitorByBuildIdAndDate(int buildNumber,String date) {
         String sql="select * from VisitorTable where buildNumber=(?) and visitorDate=(?)";
         List<VisitorBean> list=new ArrayList<>();
         try{
@@ -137,7 +144,7 @@ public class VisitorDao {
      * @param reason the reason
      * @return boolean: if success return true,else false
      */
-    public boolean addVistor(int buildNumber,String visitorName,String visitorDate,String phone,String reason) {
+    public static boolean addVistor(int buildNumber,String visitorName,String visitorDate,String phone,String reason) {
         String sql="insert into VisitorTable(buildNumber,visitorName,visitorDate,phone,reason) values(?,?,?,?,?)";
         try{
             PreparedStatement statement=connection.prepareStatement(sql);
@@ -152,5 +159,20 @@ public class VisitorDao {
             return false;
         }
         return true;
+    }
+
+    public static boolean deleteVisitor(int id){
+        String sql = "delete from VisitorTable where id=?";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,id);
+            if (preparedStatement.execute()){
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return false;
     }
 }

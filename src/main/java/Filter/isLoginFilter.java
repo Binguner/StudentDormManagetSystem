@@ -32,14 +32,18 @@ public class isLoginFilter implements Filter {
                 return;
             }
         }else {
-            System.out.println("get login session");
+            //System.out.println("get login session");
             //System.out.println("is login");
-            if(request.getServletPath().equals("/index.jsp")||request.getServletPath().equals("/index")){
+            if(request.getServletPath().equals("login") || request.getServletPath().equals("login.jsp")){
+                response.sendRedirect("/index.jsp");
+                return;
+            }
+            /*if(request.getServletPath().equals("/index.jsp")||request.getServletPath().equals("/index")){
 
             }else {
                 response.sendRedirect("/index.jsp");
                 return;
-            }
+            }*/
         }
 
         /*request.setCharacterEncoding("utf-8");

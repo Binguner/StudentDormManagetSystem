@@ -71,13 +71,13 @@
         <tr></tr>
         <tr>
           <td>
-            <a href="InquireStudent.html">
+            <a href="/searchstudent">
               <input type="button" style="height:35px; width:120px;" value="查询学生信息">
             </a>
           </td>
           <td></td>
           <td>
-            <a href="InquireDormitory.html">
+            <a href="/querydorm">
               <input type="button" style="height:35px; width:120px;" value="查询寝室信息">
             </a>
           </td>
@@ -91,7 +91,7 @@
           </td>
           <td></td>
           <td>
-            <a href="PeopleRegister.html">
+            <a href="/addvisitor">
               <input type="button" style="height:35px; width:120px;" value="外来人员登记">
             </a>
           </td>

@@ -10,6 +10,11 @@ import java.util.List;
 public class StudentDao {
 
     static Connection connection;
+    static {
+        if (null == connection){
+            connection = JDBCUtils.getConnection();
+        }
+    }
     public StudentDao(){
         if (null == connection){
             connection = JDBCUtils.getConnection();

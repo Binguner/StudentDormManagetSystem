@@ -25,4 +25,7 @@ dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
     compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
     compile group: 'org.apache.taglibs', name: 'taglibs-standard-impl', version: '1.2.5'
+    // https://mvnrepository.com/artifact/com.alibaba/fastjson
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.54'
+
 }

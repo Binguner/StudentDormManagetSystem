@@ -36,13 +36,67 @@
     
     <servlet>
         <servlet-name>PageToAddStudent</servlet-name>
-        <servlet-class>Servlet.Page_AddStudentServlet</servlet-class>
+        <servlet-class>Servlet.PageServlet.Page_AddStudentServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>PageToAddStudent</servlet-name>
         <url-pattern>/addStudent</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <servlet-class>Servlet.AddStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <url-pattern>/addStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PageToQueryStudent</servlet-name>
+        <servlet-class>Servlet.PageServlet.Page_QueryStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PageToQueryStudent</servlet-name>
+        <url-pattern>/searchstudent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentDao</servlet-name>
+        <servlet-class>Servlet.LoadStudentInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentDao</servlet-name>
+        <url-pattern>/getStudentInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PageToDormInfo</servlet-name>
+        <servlet-class>Servlet.PageServlet.Page_ShowDormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PageToDormInfo</servlet-name>
+        <url-pattern>/querydorm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PageToAddVisitor</servlet-name>
+        <servlet-class>Servlet.PageServlet.Page_AddVisitorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PageToAddVisitor</servlet-name>
+        <url-pattern>/addvisitor</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>VisitorServlet</servlet-name>
+        <servlet-class>Servlet.VisitorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VisitorServlet</servlet-name>
+        <url-pattern>/visitorservlet</url-pattern>
+    </servlet-mapping>
+
     <filter>
         <filter-name>IsLoginFilter</filter-name>
         <filter-class>Filter.isLoginFilter</filter-class>
@@ -59,5 +113,7 @@
         <url-pattern>/login.jsp</url-pattern>
         <url-pattern>/index</url-pattern>
         <url-pattern>/index.jsp</url-pattern>
+        <url-pattern>/addStudent.jsp</url-pattern>
+        <url-pattern>/addStudent</url-pattern>
     </filter-mapping>
 </web-app>

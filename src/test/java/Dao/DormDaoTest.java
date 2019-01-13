@@ -1,6 +1,7 @@
 package Dao;
 
 import Bean.DormBean;
+import JDBCUtils.JDBCUtils;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,8 +21,8 @@ public class DormDaoTest {
          String URL = "jdbc:mysql://106.15.199.8:1521/StuentDormManagerDB";
          try {
              Class.forName(Driver);
-             connection = DriverManager.getConnection(URL,username,password);
-         } catch (ClassNotFoundException | SQLException e) {
+             connection = JDBCUtils.getConnection();
+         } catch (ClassNotFoundException e) {
              e.printStackTrace();
          }
          //return connection;
@@ -174,5 +175,33 @@ public class DormDaoTest {
             System.out.println(dormBean.getId() + " " + dormBean.getBuildNumber() + " " + dormBean.getFloorNumber() + " " + dormBean.getDormNumber()
             + " " + dormBean.getPeopleCount());
         });
+    }
+
+    @Test
+    public void initDorm(){
+        String sql = "insert into DormTable(buildNumber, floorNumber, dormNumber, peopleCount) " +
+                "values (?,?,?,?);";
+
+
+        for(int buildNumber = 1; buildNumber <= 10; buildNumber++){
+            for (int floorNumber = 1; floorNumber <= 6; floorNumber++){
+                for (int dormNumber = 1; dormNumber <= 6; dormNumber++){
+                    int r_dormNumebr = Integer.parseInt(floorNumber+"0"+dormNumber);
+                    System.out.println("d: " + r_dormNumebr);
+                    try {
+                        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                        preparedStatement.setInt(1,buildNumber);
+                        preparedStatement.setInt(2,floorNumber);
+                        preparedStatement.setInt(3,r_dormNumebr);
+                        preparedStatement.setInt(4,0);
+                        preparedStatement.execute();
+                    } catch (SQLException e) {
+                        System.out.println("wrong");
+                        e.printStackTrace();
+                    }
+
+                }
+            }
+        }
     }
 }
