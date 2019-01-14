@@ -85,7 +85,7 @@
         <tr></tr>
         <tr>
           <td>
-            <a href="InquireProperty.html">
+            <a href="/property">
               <input type="button" style="height:35px; width:120px;" value="查询财产信息">
             </a>
           </td>
@@ -99,7 +99,7 @@
         <tr></tr>
         <tr>
           <td>
-            <a href="GoodsRegister.html">
+            <a href="/goods">
               <input type="button" style="height:35px; width:120px;" value="货物搬出登记">
             </a>
           </td>

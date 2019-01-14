@@ -91,4 +91,24 @@ public class GoodsDaoTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void deleteById(){
+        int dataId = 1;
+        String sql = "delete from GoodsTable where id=?";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,dataId);
+            if (preparedStatement.execute()){
+                System.out.println("ok");
+            }else {
+                System.out.println("no");
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("no");
+        }
+        System.out.println("no");
+    }
 }

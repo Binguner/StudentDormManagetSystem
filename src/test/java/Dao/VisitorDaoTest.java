@@ -243,7 +243,7 @@ public class VisitorDaoTest {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1,id);
             if (preparedStatement.execute()){
-                System.out.println("wrong");
+                System.out.println("ok");
             }
         } catch (SQLException e) {
             e.printStackTrace();

@@ -3,25 +3,29 @@ package Dao;
 import Bean.PropertyBean;
 import JDBCUtils.JDBCUtils;
 
-import java.sql.PreparedStatement;
-import java.sql.Statement;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.sql.Connection;
 
 public class PropertyDao {
     private static Connection connection;
 
+    static {
+        if (null == connection){
+            connection = JDBCUtils.getConnection();
+        }
+    }
     public PropertyDao(){
-        connection = (Connection) JDBCUtils.getConnection();
+        if (null == connection) {
+            connection = (Connection) JDBCUtils.getConnection();
+        }
     }
 
     /**
      * get all property list
      * @return all property list
      */
-    public List<PropertyBean> getAllPropertyList(){
+    public static List<PropertyBean> getAllPropertyList(){
         String sql = "select * from PropertyTable";
         List<PropertyBean> list = new ArrayList<>();
         try{
@@ -46,7 +50,7 @@ public class PropertyDao {
      * @param buildNumber one build's number
      * @return this build's all property information
      */
-    public List<PropertyBean> getBuildProperty(int buildNumber){
+    public static List<PropertyBean> getBuildProperty(int buildNumber){
         List<PropertyBean> list=new ArrayList<>();
         String sql="select * from PropertyTable where buildNumber=?";
         try{
@@ -74,7 +78,7 @@ public class PropertyDao {
      * @param property propertyBean
      * @return boolean: update success return true,else false
      */
-    public boolean updatePropertyInfo(PropertyBean property){
+    public static boolean updatePropertyInfo(PropertyBean property){
         try{
             String sql="update PropertyTable set buildNumber=(?),goodName=(?),price=(?) where id=(?)";
             PreparedStatement statement=connection.prepareStatement(sql);
@@ -97,7 +101,7 @@ public class PropertyDao {
      * @param price property's price
      * @return boolean: insert success true, failed false
      */
-    public boolean addPropertyInfo(int buildNumber,String goodName,float price) {
+    public static boolean addPropertyInfo(int buildNumber,String goodName,float price) {
         try{
             String sql = "insert into PropertyTable(buildNumber,goodName,price) values (?,?,?)";
             PreparedStatement statement = connection.prepareStatement(sql);
@@ -110,5 +114,21 @@ public class PropertyDao {
             return false;
         }
         return true;
+    }
+
+    public static boolean deletePropertyByID(int propertyID){
+        String sql = "delete from PropertyTable where id=?";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,propertyID);
+            if (preparedStatement.execute()){
+                return true;
+            }else {
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }

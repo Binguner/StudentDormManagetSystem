@@ -12,6 +12,11 @@ import java.util.List;
 public class GoodsDao {
 
     static Connection connection = null;
+    static {
+        if (null == connection){
+            connection = JDBCUtils.getConnection();
+        }
+    }
     public GoodsDao(){
         if (null == connection){
             connection = JDBCUtils.getConnection();
@@ -90,6 +95,23 @@ public class GoodsDao {
             return false;
         }
         return true;
+    }
+
+    public static boolean deleteDataById(int dataId){
+        String sql = "delete from GoodsTable where id=?";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,dataId);
+            if (preparedStatement.execute()){
+                return  true;
+            }else {
+                return  false;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
 

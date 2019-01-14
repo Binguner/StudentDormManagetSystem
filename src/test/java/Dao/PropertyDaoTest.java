@@ -5,10 +5,7 @@ import JDBCUtils.JDBCUtils;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -104,6 +101,23 @@ public class PropertyDaoTest {
             statement.setInt(4, property.getId());
             statement.execute();
         }catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void delete(){
+        int propertyID = 5;
+        String sql = "delete from PropertyTable where id=?";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,propertyID);
+            if (preparedStatement.execute()){
+                System.out.println("ok");
+            }else {
+                System.out.println("no");
+            }
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }

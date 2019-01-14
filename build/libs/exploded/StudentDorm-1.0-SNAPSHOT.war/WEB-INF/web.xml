@@ -97,6 +97,40 @@
         <url-pattern>/visitorservlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Page_PropertyServlet</servlet-name>
+        <servlet-class>Servlet.PageServlet.Page_PropertyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Page_PropertyServlet</servlet-name>
+        <url-pattern>/property</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PropertyServlet</servlet-name>
+        <servlet-class>Servlet.PropertyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PropertyServlet</servlet-name>
+        <url-pattern>/handleProperty</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Page_GoodsServlet</servlet-name>
+        <servlet-class>Servlet.PageServlet.Page_GoodsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Page_GoodsServlet</servlet-name>
+        <url-pattern>/goods</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>HandleGoods</servlet-name>
+        <servlet-class>Servlet.GoodsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandleGoods</servlet-name>
+        <url-pattern>/handleGoods</url-pattern>
+    </servlet-mapping>
+    
     <filter>
         <filter-name>IsLoginFilter</filter-name>
         <filter-class>Filter.isLoginFilter</filter-class>
