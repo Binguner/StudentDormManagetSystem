@@ -2,9 +2,17 @@ package Dao;
 
 import Bean.StudentBean;
 import JDBCUtils.JDBCUtils;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -298,6 +306,82 @@ public class StudentDaoTest {
             e.printStackTrace();
         }
         soutStudents(list);
+    }
+
+    @Test
+    public void addRJ(){
+        String filePath = "/Users/binguner/Desktop/test.xlsx";
+        try {
+            FileInputStream stream = new FileInputStream(filePath);
+            XSSFWorkbook workbook = new XSSFWorkbook(stream);
+            XSSFSheet sheet = workbook.getSheet("Sheet1");
+            int rowNumber = sheet.getLastRowNum();
+            int colNumber = sheet.getRow(3).getLastCellNum();
+            System.out.println(sheet.getRow(1).getCell(1).toString()); //软件1601
+            System.out.println("row :" + rowNumber);
+            System.out.println("col :" + colNumber);
+            String sql = "insert into StudentTable(studentID, studentName, sex, majorName, grade, classNum, buildNumber, dormNumber) " +
+                    "values(?,?,?,?,?,?,?,?)";
+            for(int row = 1;row <= rowNumber; row++){
+                String className = sheet.getRow(row).getCell(1).toString();
+                String studentNumber = sheet.getRow(row).getCell(0).toString();
+                String studentName = sheet.getRow(row).getCell(2).toString();
+                String sex = sheet.getRow(row).getCell(3).toString();
+
+                try {
+                    PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                    preparedStatement.setString(1,studentNumber);
+                    preparedStatement.setString(2,studentName);
+                    preparedStatement.setString(3,sex);
+                    preparedStatement.setString(4,"软件工程");
+                    preparedStatement.setInt(5,16);
+                    preparedStatement.setString(6,className);
+                    preparedStatement.setInt(7,0);
+                    preparedStatement.setInt(8,0);
+                    preparedStatement.execute();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @Test
+    public void getClassNameList(){
+        String sql ="select classNum from StudentTable group by classNum;";
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet set = statement.executeQuery(sql);
+            while (set.next()){
+                System.out.println(set.getString(1));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void getThisClassAllPeopleCount(){
+        String className = "软件1632";
+        //String sql = "select studentID from StudentTable where classNum=?;";
+        //String sql = "select studentID from StudentTable where classNum=? and sex='男';";
+        String sql = "select studentID from StudentTable where classNum=? and sex='女';";
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,className);
+            ResultSet set = preparedStatement.executeQuery();
+            set.last();
+            int rowCount = set.getRow();
+            System.out.println(rowCount);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     private void soutStudents(List<StudentBean> list){

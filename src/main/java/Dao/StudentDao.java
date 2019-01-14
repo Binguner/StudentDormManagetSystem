@@ -2,6 +2,7 @@ package Dao;
 
 import Bean.StudentBean;
 import JDBCUtils.JDBCUtils;
+import org.w3c.dom.ls.LSException;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -304,4 +305,69 @@ public class StudentDao {
         }
         return list;
     }
+
+    /**
+     *
+     * @return the class name list (unique)
+     */
+    public static List<String> getClassNameList(){
+        List<String> list = new ArrayList<>();
+        String sql ="select classNum from StudentTable group by classNum;";
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet set = statement.executeQuery(sql);
+            while (set.next()){
+                list.add(set.getString(1));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    public static int getThisClassAllPeopleCount(String className){
+        String sql = "select studentID from StudentTable where classNum=?;";
+        int rowCount = 0;
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,className);
+            ResultSet set = preparedStatement.executeQuery();
+            set.last();
+            rowCount = set.getRow();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return rowCount;
+    }
+
+    public static int getThisClassBoyCount(String className){
+        String sql = "select studentID from StudentTable where classNum=? and sex='男';";
+        int rowCount = 0;
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,className);
+            ResultSet set = preparedStatement.executeQuery();
+            set.last();
+            rowCount = set.getRow();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return rowCount;
+    }
+
+    public static int getThisClassGirlCount(String className){
+        String sql = "select studentID from StudentTable where classNum=? and sex='女';";
+        int rowCount = 0;
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,className);
+            ResultSet set = preparedStatement.executeQuery();
+            set.last();
+            rowCount = set.getRow();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return rowCount;
+    }
+
 }

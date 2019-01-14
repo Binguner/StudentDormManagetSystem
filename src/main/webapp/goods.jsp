@@ -22,18 +22,22 @@
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script type="text/javascript" language="JavaScript">
-        function deleteThisData(dataId) {
 
+        function deleteThisData(dataId,button) {
+            console.log("here");
             $.ajax({
                 type: "POST",
                 dataType: "text",
+                url: "/handleGoods",
                 data: "type=1&dataId="+dataId,
-                url: "",
-                success: function () {
-
+                success: function (res) {
+                    if (res == "0"){
+                        //console.log("delete success")
+                        var index = $(button).parent().parent().prevAll().length;
+                        $("#table_content tr:eq("+index+")").remove();
+                    }
                 },
                 error: function () {
-
                 }
             })
         }
@@ -51,18 +55,32 @@
                 var goodsName = document.getElementById("goodsName").value;
                 var goodsDate = document.getElementById("goodsDate").value;
                 var goodsDetail = document.getElementById("goodsDetail").value;
-                console.log(buildNumber);
-                console.log(goodsName);
-                console.log(goodsDate);
-                console.log(goodsDetail);
+                // console.log(buildNumber);
+                // console.log(goodsName);
+                // console.log(goodsDate);
+                // console.log(goodsDetail);
                 $.ajax({
                     type: "POST",
                     url: "/handleGoods",
                     dadaType: "text",
                     data: "type=0&buildNumber="+buildNumber+"&goodsName="+goodsName+"&goodsDate="+goodsDate+"&goodsDetail="+goodsDetail,
-                    success: function () {
-                        clearDatas();
-                        alert("数据添加成功！")
+                    success: function (restext) {
+                        console.log(restext);
+                        if (restext == "0"){
+                            clearDatas();
+                            alert("数据添加成功！");
+                            $("#table_content").append(
+                                " <tr>\n" +
+                                "         <td>"+buildNumber+"</td>\n" +
+                                "         <td>"+goodsName+"</td>\n" +
+                                "         <td>"+goodsDate+"</td>\n" +
+                                "         <td>"+goodsDetail+"</td>\n" +
+                                "         <td><button>删除</button></td>\n"+
+                                "</tr>"
+                            );
+                        } else {
+                            alert("数据添加失败！")
+                        }
                     },
                     error: function () {
                         alert("数据添加失败！")
@@ -125,7 +143,7 @@
                         <td><%=goodsBean.getGoodsName()%></td>
                         <td><%=goodsBean.getGoodsDate()%></td>
                         <td><%=goodsBean.getGoodsDetail()%></td>
-                        <td><button onclick="onclick="deleteThisData(<%=goodsBean.getId()%>)">删除</button></td>
+                        <td><button onclick="deleteThisData(<%=goodsBean.getId()%>,this)">删除</button></td>
                     </tr>
 
         <%        }

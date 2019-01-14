@@ -122,6 +122,7 @@
         <servlet-name>Page_GoodsServlet</servlet-name>
         <url-pattern>/goods</url-pattern>
     </servlet-mapping>
+    
     <servlet>
         <servlet-name>HandleGoods</servlet-name>
         <servlet-class>Servlet.GoodsServlet</servlet-class>
@@ -129,6 +130,23 @@
     <servlet-mapping>
         <servlet-name>HandleGoods</servlet-name>
         <url-pattern>/handleGoods</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Page_DormDis</servlet-name>
+        <servlet-class>Servlet.PageServlet.Page_DormDIsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Page_DormDis</servlet-name>
+        <url-pattern>/dorm</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>HandleDorm</servlet-name>
+        <servlet-class>Servlet.HandleDormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandleDorm</servlet-name>
+        <url-pattern>/handledorm</url-pattern>
     </servlet-mapping>
     
     <filter>

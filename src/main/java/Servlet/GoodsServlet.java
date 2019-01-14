@@ -28,14 +28,18 @@ public class GoodsServlet extends HttpServlet {
                 String date = request.getParameter("goodsDate");
                 String detial = request.getParameter("goodsDetail");
                 if (!GoodsDao.insertGood(buildNumber,goodsName,date,detial)){
-                    System.out.println("0");
+                    response.getWriter().write("0");
                 }else {
-                    System.out.println("1");
+                    response.getWriter().write("1");
                 }
                 break;
             case GOODS_DELETE:
                 int dataID = Integer.parseInt(request.getParameter("dataId"));
-                GoodsDao.deleteDataById(dataID);
+                if (!GoodsDao.deleteDataById(dataID)){
+                    response.getWriter().write("0");
+                }else {
+                    response.getWriter().write("1");
+                }
 
         }
     }

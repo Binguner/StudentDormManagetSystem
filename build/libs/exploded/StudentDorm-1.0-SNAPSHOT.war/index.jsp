@@ -63,7 +63,7 @@
           </td>
           <td width="100"></td>
           <td>
-            <a href="DormitoryAllocation.html">
+            <a href="dorm">
               <input type="button" style="height:35px; width:120px;" value="寝室分配功能">
             </a>
           </td>

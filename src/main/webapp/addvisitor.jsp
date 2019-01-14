@@ -41,11 +41,11 @@
                 dataType: "text",
                 data: "type=1"+"&visitorId="+visitorID,
                 success: function (responseText) {
-                    console.log("delete success");
+                    //console.log("delete success");
                     $("#table_list tr:eq("+index+")").remove();
                 },
                 error: function (responseText) {
-                    console.log("delete failed")
+                    //console.log("delete failed")
                 }
             })
         }
