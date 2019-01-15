@@ -20,16 +20,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Dao/StudentDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Servlet/HandleDormServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Servlet/HandleDormServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Dao/DormDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/Dao/DormDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Dao/StudentDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/Dao/StudentDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Dao/DormDisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/Dao/DormDisTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/StudentDorm-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/StudentDorm-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/exploded/StudentDorm-1.0-SNAPSHOT.war/WEB-INF/classes/Dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/StudentDorm-1.0-SNAPSHOT.war/WEB-INF/classes/Dao/StudentDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/exploded/StudentDorm-1.0-SNAPSHOT.war/WEB-INF/classes/Servlet/HandleDormServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/StudentDorm-1.0-SNAPSHOT.war/WEB-INF/classes/Servlet/HandleDormServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/StudentDorm-1.0-SNAPSHOT.war/dormdis.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/StudentDorm-1.0-SNAPSHOT.war/dormdis.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Dao/StudentDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Servlet/HandleDormServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Servlet/HandleDormServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/StudentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Servlet/HandleDormServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlet/HandleDormServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dormdis.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dormdis.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -96,27 +96,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="StudentDorm" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="StudentDorm" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="StudentDorm" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="mysql:mysql-connector-java:8.0.13" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="StudentDorm" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
@@ -131,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/232b00a1-2a3b-4bb0-8fe6-18328b48fd7e/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="179">
               <caret line="52" selection-start-line="52" selection-end-line="52" selection-end-column="27" />
               <folding>
                 <element signature="e#76#530#0" />
@@ -145,36 +124,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/StudentDao.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/dormdis.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3591">
-              <caret line="447" column="40" selection-start-line="447" selection-start-column="40" selection-end-line="447" selection-end-column="40" />
+            <state relative-caret-position="442">
+              <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getAllStudent#0;class#StudentDao#0" />
-                <element signature="docComment;method#addStudent#0;class#StudentDao#0" />
-                <element signature="method#addStudent#0;class#StudentDao#0" />
-                <element signature="method#getStudentsList#0;class#StudentDao#0" />
-                <element signature="method#getStudentListByDormNumber#0;class#StudentDao#0" />
-                <element signature="method#getStudentListByClassNum#0;class#StudentDao#0" />
-                <element signature="method#getStudentListByGrade#0;class#StudentDao#0" />
-                <element signature="method#getThisStudent#0;class#StudentDao#0" />
-                <element signature="method#getStudentListByBuildNumer#0;class#StudentDao#0" />
-                <element signature="method#getStudentListBySex#0;class#StudentDao#0" />
-                <element signature="method#getClassNameList#0;class#StudentDao#0" />
-                <element signature="method#getStudentCount#0;class#StudentDao#0" />
-                <element signature="method#getGirlListByClassName#0;class#StudentDao#0" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Bean/StudentBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="15" />
+              <folding>
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#934#935#0" expanded="true" />
+                <element signature="e#966#967#0" expanded="true" />
+                <element signature="e#1679#1680#0" expanded="true" />
+                <element signature="e#1710#1711#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="313" column="8" lean-forward="true" selection-start-line="279" selection-start-column="5" selection-end-line="313" selection-end-column="8" />
+            <state relative-caret-position="496">
+              <caret line="311" selection-start-line="311" selection-end-line="311" />
               <folding>
                 <element signature="method#getAllStudent#0;class#StudentDaoTest#0" />
                 <element signature="method#testGetStudentListByMajorName#0;class#StudentDaoTest#0" />
@@ -184,6 +168,7 @@
                 <element signature="method#getStudentListByBuildNumber#0;class#StudentDaoTest#0" />
                 <element signature="method#getStudentListBySex#0;class#StudentDaoTest#0" />
                 <element signature="method#getStudentListByGrade#0;class#StudentDaoTest#0" />
+                <element signature="method#addRJ#0;class#StudentDaoTest#0" />
                 <element signature="method#getClassNameList#0;class#StudentDaoTest#0" />
                 <element signature="method#getThisClassAllPeopleCount#0;class#StudentDaoTest#0" />
                 <element signature="method#soutStudents#0;class#StudentDaoTest#0" />
@@ -193,40 +178,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Dao/DormDisTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="49" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/dormdis.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/HandleDormServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="56" column="42" lean-forward="true" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3108">
-              <caret line="148" column="32" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
+            <state relative-caret-position="706">
+              <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -301,16 +256,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/goods.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/AddStudent.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Servlet/PageServlet/Page_DormDIsServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/dormdis.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/Dao/DormDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/232b00a1-2a3b-4bb0-8fe6-18328b48fd7e/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/Dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/Dao/DormDisTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlet/HandleDormServlet.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/232b00a1-2a3b-4bb0-8fe6-18328b48fd7e/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/dormdis.jsp" />
       </list>
     </option>
   </component>
@@ -369,6 +324,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentDorm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentDorm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -384,7 +347,9 @@
               <item name="StudentDorm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="PageServlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudentDorm" type="b2602c69:ProjectViewProjectNode" />
@@ -392,7 +357,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudentDorm" type="b2602c69:ProjectViewProjectNode" />
@@ -427,10 +391,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547513047495" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547520240542" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -463,7 +427,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.61">
+  <component name="RunManager" selected="JUnit.StudentDaoTest.addRJ">
     <configuration name="DormDaoTest.initDorm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.binguner.StudentDorm.test" />
       <extension name="coverage">
@@ -549,7 +513,7 @@
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Gradle : com.binguner : StudentDorm-1.0-SNAPSHOT.war (exploded)">
           <settings>
@@ -654,26 +618,11 @@
       <workItem from="1547137490565" duration="21308000" />
       <workItem from="1547203170583" duration="11455000" />
       <workItem from="1547256600681" duration="74205000" />
-      <workItem from="1547475918743" duration="1136000" />
+      <workItem from="1547475918743" duration="7643000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DormDisTest_tt - 2019.01.14 at 22h 19m 06s.xml">
-      <configuration name="DormDisTest.tt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DormDisTest_tt - 2019.01.14 at 22h 24m 15s.xml">
-      <configuration name="DormDisTest.tt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DormDisTest_tt - 2019.01.14 at 22h 25m 59s.xml">
-      <configuration name="DormDisTest.tt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DormDisTest_tt - 2019.01.14 at 22h 27m 32s.xml">
-      <configuration name="DormDisTest.tt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DormDisTest_tt - 2019.01.14 at 22h 31m 02s.xml">
-      <configuration name="DormDisTest.tt" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DormDisTest_tt - 2019.01.14 at 22h 32m 22s.xml">
       <configuration name="DormDisTest.tt" configurationId="JUnit" />
     </history-entry>
@@ -689,9 +638,24 @@
     <history-entry file="StudentDaoTest_addRJ - 2019.01.14 at 22h 39m 38s.xml">
       <configuration name="StudentDaoTest.addRJ" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StudentDaoTest_addRJ - 2019.01.15 at 09h 21m 13s.xml">
+      <configuration name="StudentDaoTest.addRJ" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentDaoTest_addRJ - 2019.01.15 at 09h 51m 15s.xml">
+      <configuration name="StudentDaoTest.addRJ" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentDaoTest_addRJ - 2019.01.15 at 09h 52m 49s.xml">
+      <configuration name="StudentDaoTest.addRJ" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentDaoTest_addRJ - 2019.01.15 at 10h 13m 42s.xml">
+      <configuration name="StudentDaoTest.addRJ" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentDaoTest_addRJ - 2019.01.15 at 10h 18m 31s.xml">
+      <configuration name="StudentDaoTest.addRJ" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164448000" />
+    <option name="totallyTimeSpent" value="170955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,14 +680,14 @@
       <window_info id="Web" order="7" sideWeight="0.50570345" side_tool="true" weight="0.19329074" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32988626" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35218784" />
-      <window_info anchor="bottom" id="Database Console" order="3" weight="0.3236815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36072573" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="3" visible="true" weight="0.339381" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3991727" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32988626" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.32574975" />
-      <window_info anchor="bottom" id="Application Servers" order="9" weight="0.32885212" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32977587" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32550693" />
+      <window_info anchor="bottom" id="Application Servers" order="9" weight="0.32870865" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -737,8 +701,8 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.32960597" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.1978022" />
-      <window_info anchor="right" id="Database" order="7" weight="0.20127796" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.1978022" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.14590965" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
@@ -836,21 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/StudentBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1679#1680#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/PageServlet/Page_QueryStudentServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -868,20 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="52" column="53" lean-forward="true" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/LoadStudentInfoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Filter/isLoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -893,13 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/PageServlet/Page_ShowDormServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="23" column="78" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -917,24 +845,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/querystudent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_jquery_3.3.1_jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="2856" column="4" selection-start-line="2856" selection-start-column="4" selection-end-line="2856" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/VisitorServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -983,20 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="475" column="36" lean-forward="true" selection-start-line="475" selection-start-column="36" selection-end-line="475" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/showdorm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/PageServlet/Page_PropertyServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1027,51 +927,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/PropertyServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="4391" column="86" lean-forward="true" selection-start-line="4391" selection-start-column="86" selection-end-line="4391" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/goods.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="77" column="53" selection-start-line="77" selection-start-column="53" selection-end-line="77" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/addvisitor.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="44" column="34" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/property.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="80" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/AddStudent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="130" column="45" lean-forward="true" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,13 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1160,17 +1012,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/PageServlet/Page_DormDIsServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="184">
+          <caret line="148" column="32" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="478" column="12" selection-start-line="478" selection-start-column="12" selection-end-line="478" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/StudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3591">
-          <caret line="447" column="40" selection-start-line="447" selection-start-column="40" selection-end-line="447" selection-end-column="40" />
+        <state relative-caret-position="310">
+          <caret line="448" column="24" lean-forward="true" selection-start-line="448" selection-start-column="24" selection-end-line="448" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getAllStudent#0;class#StudentDao#0" />
@@ -1190,24 +1050,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/dormdis.jsp">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Dao/DormDisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="454">
+          <caret line="35" column="49" lean-forward="true" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/goods.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3108">
-          <caret line="148" column="32" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
+        <state relative-caret-position="332">
+          <caret line="122" column="6" lean-forward="true" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/property.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/showdorm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/querystudent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/AddStudent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1143">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/VisitorServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/PropertyServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/LoadStudentInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/PageServlet/Page_ShowDormServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/PageServlet/Page_DormDIsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/HandleDormServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+          <folding>
+            <element signature="method#getAllStudent#0;class#StudentDaoTest#0" />
+            <element signature="method#testGetStudentListByMajorName#0;class#StudentDaoTest#0" />
+            <element signature="method#testGetStudentListByDormNumber#0;class#StudentDaoTest#0" />
+            <element signature="method#testGetStudentListByGradeAndClassNum#0;class#StudentDaoTest#0" />
+            <element signature="method#testGetThisStudent#0;class#StudentDaoTest#0" />
+            <element signature="method#getStudentListByBuildNumber#0;class#StudentDaoTest#0" />
+            <element signature="method#getStudentListBySex#0;class#StudentDaoTest#0" />
+            <element signature="method#getStudentListByGrade#0;class#StudentDaoTest#0" />
+            <element signature="method#addRJ#0;class#StudentDaoTest#0" />
+            <element signature="method#getClassNameList#0;class#StudentDaoTest#0" />
+            <element signature="method#getThisClassAllPeopleCount#0;class#StudentDaoTest#0" />
+            <element signature="method#soutStudents#0;class#StudentDaoTest#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/232b00a1-2a3b-4bb0-8fe6-18328b48fd7e/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="179">
           <caret line="52" selection-start-line="52" selection-end-line="52" selection-end-column="27" />
           <folding>
             <element signature="e#76#530#0" />
@@ -1220,39 +1187,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Dao/DormDisTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addvisitor.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="49" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="49" />
+        <state relative-caret-position="240">
+          <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="77" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/StudentBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet/HandleDormServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/dormdis.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="56" column="42" lean-forward="true" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Dao/StudentDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="313" column="8" lean-forward="true" selection-start-line="279" selection-start-column="5" selection-end-line="313" selection-end-column="8" />
+        <state relative-caret-position="442">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
           <folding>
-            <element signature="method#getAllStudent#0;class#StudentDaoTest#0" />
-            <element signature="method#testGetStudentListByMajorName#0;class#StudentDaoTest#0" />
-            <element signature="method#testGetStudentListByDormNumber#0;class#StudentDaoTest#0" />
-            <element signature="method#testGetStudentListByGradeAndClassNum#0;class#StudentDaoTest#0" />
-            <element signature="method#testGetThisStudent#0;class#StudentDaoTest#0" />
-            <element signature="method#getStudentListByBuildNumber#0;class#StudentDaoTest#0" />
-            <element signature="method#getStudentListBySex#0;class#StudentDaoTest#0" />
-            <element signature="method#getStudentListByGrade#0;class#StudentDaoTest#0" />
-            <element signature="method#getClassNameList#0;class#StudentDaoTest#0" />
-            <element signature="method#getThisClassAllPeopleCount#0;class#StudentDaoTest#0" />
-            <element signature="method#soutStudents#0;class#StudentDaoTest#0" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

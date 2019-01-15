@@ -2,7 +2,10 @@ package Servlet;
 
 import Bean.StudentBean;
 import Dao.StudentDao;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 
+import javax.management.StandardEmitterMBean;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,6 +18,7 @@ import java.util.List;
 @WebServlet(name = "HandleDormServlet")
 public class HandleDormServlet extends HttpServlet {
     public static final int DIS_DORM = 0;
+    public static final int GET_DORM_LIST = 1;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request,response);
     }
@@ -53,10 +57,16 @@ public class HandleDormServlet extends HttpServlet {
                             }
                         }
                     }
+                    response.getWriter().write("0");
                 }catch (IndexOutOfBoundsException e){
                     //e.printStackTrace();
                 }
-
+                break;
+            case GET_DORM_LIST:
+                List<StudentBean> list = StudentDao.getAllStudent();
+                String responseText = JSON.toJSONString(list);
+                //System.out.println(responseText);
+                response.getWriter().write(responseText);
                 break;
         }
     }

@@ -438,7 +438,7 @@ public class StudentDao {
 
     }
 
-    public static void setBuildNumberDormNumber(int studentiD,int buildNumber,int dormNumber){
+    public static boolean setBuildNumberDormNumber(int studentiD,int buildNumber,int dormNumber){
         String sql = "update StudentTable set buildNumber = ?, dormNumber = ? where id=?;";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -446,8 +446,10 @@ public class StudentDao {
             preparedStatement.setInt(2,dormNumber);
             preparedStatement.setInt(3,studentiD);
             preparedStatement.execute();
+            return true;
         } catch (SQLException e) {
             e.printStackTrace();
+            return false;
         }
     }
 }
