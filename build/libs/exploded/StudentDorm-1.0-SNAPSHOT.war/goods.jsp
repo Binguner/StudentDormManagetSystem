@@ -10,6 +10,8 @@
 <html>
 <head>
     <title>货物搬出登记</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="layui/layui.js"></script>
     <style type="text/css">
         #div_title{
             height: 150px;
@@ -33,7 +35,7 @@
                 success: function (res) {
                     if (res == "0"){
                         //console.log("delete success")
-                        var index = $(button).parent().parent().prevAll().length;
+                        var index = $(button).parent().parent().prevAll().length+1;
                         $("#table_content tr:eq("+index+")").remove();
                     }
                 },
@@ -69,7 +71,7 @@
                         if (restext == "0"){
                             clearDatas();
                             alert("数据添加成功！");
-                            $("#table_content").append(
+                            $("#table_content tbody").append(
                                 " <tr>\n" +
                                 "         <td>"+buildNumber+"</td>\n" +
                                 "         <td>"+goodsName+"</td>\n" +
@@ -97,58 +99,137 @@
 <div id="div_title">
     <p id="title" align="center">欢迎使用学生公寓管理系统</p>
 </div>
-<div id="div_add_record">
-    <table id="table_add_record" align="center">
-        <tr>
-            <td>楼号：</td>
-            <td><input type="text" id="buildNumber"></td>
-        </tr>
-        <tr>
-            <td>物品名称：</td>
-            <td><input type="text" id="goodsName"></td>
-        </tr>
-        <tr>
-            <td>借出日期：</td>
-            <td><input type="date" id="goodsDate"></td>
-        </tr>
-        <tr>
-            <td>详情：</td>
-            <td><input type="text" id="goodsDetail"></td>
-        </tr>
-        <tr>
-            <td><button id="goods_commit">提交</button></td>
-            <td><button id="goods_reset">重置</button></td>
-        </tr>
-    </table>
+<div id="div_add_record" align="center">
+
+    <%--<table id="table_add_record" align="center">--%>
+        <%--<tr>--%>
+            <%--<td>楼号：</td>--%>
+            <%--<td><input type="text" id="buildNumber"></td>--%>
+        <%--</tr>--%>
+        <%--<tr>--%>
+            <%--<td>物品名称：</td>--%>
+            <%--<td><input type="text" id="goodsName"></td>--%>
+        <%--</tr>--%>
+        <%--<tr>--%>
+            <%--<td>借出日期：</td>--%>
+            <%--<td><input type="date" id="goodsDate"></td>--%>
+        <%--</tr>--%>
+        <%--<tr>--%>
+            <%--<td>详情：</td>--%>
+            <%--<td><input type="text" id="goodsDetail"></td>--%>
+        <%--</tr>--%>
+        <%--<tr>--%>
+            <%--<td><button id="goods_commit">提交</button></td>--%>
+            <%--<td><button id="goods_reset">重置</button></td>--%>
+        <%--</tr>--%>
+    <%--</table>--%>
+
+    <form class="layui-form" action="" style="width: 500px">
+        <div class="layui-form-item">
+            <label class="layui-form-label">楼号</label>
+            <div class="layui-input-block">
+                <input id="buildNumber" type="text" name="title" required  lay-verify="required" placeholder="请输入楼号" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">物品名称</label>
+            <div class="layui-input-block">
+                <input id="goodsName" type="text" name="title" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">借出日期</label>
+            <div class="layui-input-block">
+                <input id="goodsDate" type="text" name="title" required  lay-verify="required" placeholder="请输入时间" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">详情</label>
+            <div class="layui-input-block">
+                <input id="goodsDetail" type="text" name="title" required  lay-verify="required" placeholder="请输入详情" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button id="goods_commit" type="button" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                <button id="goods_reset" type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+
+
 </div>
 <br>
 <br>
 <br>
 
-<div id="div_content">
-    <table align="center" id="table_content" border="1">
-        <tr>
-            <td>楼号</td>
-            <td>物品名称</td>
-            <td>借出日期</td>
-            <td>详情</td>
-            <td>操作</td>
-        </tr>
-        <%
-            if (null != list){
-                for (GoodsBean goodsBean:list){
-        %>
-                    <tr>
-                        <td><%=goodsBean.getBuildNumber()%></td>
-                        <td><%=goodsBean.getGoodsName()%></td>
-                        <td><%=goodsBean.getGoodsDate()%></td>
-                        <td><%=goodsBean.getGoodsDetail()%></td>
-                        <td><button onclick="deleteThisData(<%=goodsBean.getId()%>,this)">删除</button></td>
-                    </tr>
+<div id="div_content" align="center">
+    <%--<table align="center" id="table_content" border="1">--%>
+        <%--<tr>--%>
+            <%--<td>楼号</td>--%>
+            <%--<td>物品名称</td>--%>
+            <%--<td>借出日期</td>--%>
+            <%--<td>详情</td>--%>
+            <%--<td>操作</td>--%>
+        <%--</tr>--%>
+        <%--<%--%>
+            <%--if (null != list){--%>
+                <%--for (GoodsBean goodsBean:list){--%>
+        <%--%>--%>
+                    <%--<tr>--%>
+                        <%--<td><%=goodsBean.getBuildNumber()%></td>--%>
+                        <%--<td><%=goodsBean.getGoodsName()%></td>--%>
+                        <%--<td><%=goodsBean.getGoodsDate()%></td>--%>
+                        <%--<td><%=goodsBean.getGoodsDetail()%></td>--%>
+                        <%--<td><button onclick="deleteThisData(<%=goodsBean.getId()%>,this)">删除</button></td>--%>
+                    <%--</tr>--%>
 
-        <%        }
-            }
+        <%--<%        }--%>
+            <%--}--%>
+        <%--%>--%>
+    <%--</table>--%>
+
+
+    <table id="table_content" class="layui-table" style="width: 800px">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>楼号</th>
+            <th>物品名称</th>
+            <th>借出日期</th>
+            <th>详情</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%
+            if (null!=list){
+                for(GoodsBean goodsBean : list){
         %>
+        <tr>
+            <td><%=goodsBean.getBuildNumber()%></td>
+            <td><%=goodsBean.getGoodsName()%></td>
+            <td><%=goodsBean.getGoodsDate()%></td>
+            <td><%=goodsBean.getGoodsDetail()%></td>
+            <td><button onclick="deleteThisData(<%=goodsBean.getId()%>,this)">删除</button></td>
+        </tr>
+        <%}
+        }
+
+        %>
+
+        </tbody>
     </table>
 </div>
 
