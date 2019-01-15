@@ -20,7 +20,7 @@ public class Page_QueryStudentServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-        List<StudentBean> list = StudentDao.getAllStudent();
+        List<String> list = StudentDao.getClassNameList();
         request.setAttribute("list",list);
         request.getRequestDispatcher("/querystudent.jsp").forward(request,response);
     }

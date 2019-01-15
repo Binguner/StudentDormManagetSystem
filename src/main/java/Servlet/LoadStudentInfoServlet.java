@@ -31,7 +31,9 @@ public class LoadStudentInfoServlet extends HttpServlet {
             studentBean = StudentDao.getThisStudent(studentID.trim());
         }
         if ( null != studentBean ){
-            String str = JSON.toJSONString(studentBean);
+            List<StudentBean> list = new ArrayList<>();
+            list.add(studentBean);
+            String str = JSON.toJSONString(list);
             //System.out.println(str);
             response.getWriter().write(str);
         }

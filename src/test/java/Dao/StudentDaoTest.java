@@ -309,6 +309,36 @@ public class StudentDaoTest {
     }
 
     @Test
+    public void testUpdateStudentInfo(){
+        String studentName = "违法2的";
+        String sex = "女";
+        String majorName = "sdf";
+        String classNum = "class name";
+        int buildNumber = 44;
+        int dormNumber = 3;
+        int id = 1;
+        String sql = "update StudentTable set studentName=?,sex=?,majorName=?,classNum=?,buildNumber=?,dormNumber=? where id =?;";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,studentName);
+            preparedStatement.setString(2,sex);
+            preparedStatement.setString(3,majorName);
+            preparedStatement.setString(4,classNum);
+            preparedStatement.setInt(5,buildNumber);
+            preparedStatement.setInt(6,dormNumber);
+            preparedStatement.setInt(7,id);
+            if (preparedStatement.execute()){
+                System.out.println("true");
+            }else {
+                System.out.println("false");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        System.out.println("false");
+    }
+
+    @Test
     public void addRJ(){
         String filePath = "/Users/binguner/Desktop/test.xlsx";
         try {

@@ -19,8 +19,8 @@ public class Page_ShowDormServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("utf-8");
-        List<DormBean> list = DormDao.getDormList();
-        request.setAttribute("list",list);
+        //List<DormBean> list = DormDao.getDormList();
+        //request.setAttribute("list",list);
         request.getRequestDispatcher("/showdorm.jsp").forward(request,response);
     }
 }

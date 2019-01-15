@@ -20,20 +20,22 @@
 
         function edit(stuId){
             console.log('edit!' + stuId);
-             layui.use('layer', function(){
-                 var layer = layui.layer;
-                 layer.open({
-                     type: 2,
-                     area: ['80%','450px'],
-                     title: '我是标题',
-                     shadeClose: true,
-                     offset:[
-                         30,
-                         20
-                     ],
-                     content: ['index.jsp', 'no'] //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
-                 })
-             });
+            window.location.href = "/editstudent?id="+stuId;
+            // editstudent
+             // layui.use('layer', function(){
+             //     var layer = layui.layer;
+             //     layer.open({
+             //         type: 2,
+             //         area: ['80%','450px'],
+             //         title: '我是标题',
+             //         shadeClose: true,
+             //         offset:[
+             //             30,
+             //             20
+             //         ],
+             //         content: ['index.jsp', 'no'] //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+             //     })
+             // });
 
 
         }
@@ -84,7 +86,7 @@
                                 "            <td>"+data['classNum']+"</td>\n" +
                                 "            <td>"+data['buildNumber']+"</td>\n" +
                                 "            <td>"+data['dormNumber']+"</td>\n" +
-                                "            <td><button onclick='edit("+data['id']+")' class=\"layui-btn\">\n" +
+                                "            <td><button onclick='edit("+data['studentID']+")' class=\"layui-btn\">\n" +
                                 "        <i class=\"layui-icon\">&#xe642;</i>编辑" +
                                 "    </button></td>\n" +
                                 "        </tr>");

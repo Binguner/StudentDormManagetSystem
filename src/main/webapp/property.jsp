@@ -10,6 +10,9 @@
 <html>
 <head>
     <title>查询财产信息</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="layui/layui.js"></script>
     <style type="text/css">
         #div_title{
             height: 150px;
@@ -27,7 +30,7 @@
 
         function deleteThisProperty(propertyID,button) {
 
-            var index = $(button).parent().parent().prevAll().length;
+            var index = $(button).parent().parent().prevAll().length+1;
 
             $.ajax({
                 type: "POST",
@@ -71,7 +74,7 @@
                         if (responseText == "0"){
                             alert("信息录入成功！");
                             clearData();
-                            $("#table_content").append(
+                            $("#table_content tbody").append(
                                 " <tr>\n" +
                                 "         <td>"+buildNumber+"</td>\n" +
                                 "         <td>"+goodName+"</td>\n" +
@@ -100,56 +103,122 @@
 <div id="div_title">
     <p id="title" align="center">欢迎使用学生公寓管理系统</p>
 </div>
-<div id="div_search" >
-    <table align="center" border="1">
-        <tr>
-            <td align="right">楼号：</td>
-            <td><input id="input_buildNumber" type="number" name="buildNumber"></td>
-        </tr>
-        <tr>
-            <td align="right">财产名称：</td>
-            <td><input id="input_goodName" type="text" name="goodName"></td>
-        </tr>
-        <tr>
-            <td align="right">价值：</td>
-            <td><input id="input_price" type="text" name="price"></td>
-        </tr>
-        <tr>
-            <td>
-                <button id="commit_value">提交</button>
-            </td>
-            <td align="right">
-                <button id="reset_value">重置</button>
-            </td>
-        </tr>
-    </table>
+<div id="div_search" align="center">
+    <%--<table align="center" border="1">--%>
+        <%--<tr>--%>
+            <%--<td align="right">楼号：</td>--%>
+            <%--<td><input id="input_buildNumber" type="number" name="buildNumber"></td>--%>
+        <%--</tr>--%>
+        <%--<tr>--%>
+            <%--<td align="right">财产名称：</td>--%>
+            <%--<td><input id="input_goodName" type="text" name="goodName"></td>--%>
+        <%--</tr>--%>
+        <%--<tr>--%>
+            <%--<td align="right">价值：</td>--%>
+            <%--<td><input id="input_price" type="text" name="price"></td>--%>
+        <%--</tr>--%>
+        <%--<tr>--%>
+            <%--<td>--%>
+                <%--<button id="commit_value">提交</button>--%>
+            <%--</td>--%>
+            <%--<td align="right">--%>
+                <%--<button id="reset_value">重置</button>--%>
+            <%--</td>--%>
+        <%--</tr>--%>
+    <%--</table>--%>
+
+
+    <form class="layui-form layui-form-pane" action="" style="width: 400px;">
+        <div class="layui-form-item">
+            <label class="layui-form-label">楼号</label>
+            <div class="layui-input-block">
+                <input id="input_buildNumber" type="text" name="title" required  lay-verify="required" placeholder="请输入楼号" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">财产名称</label>
+            <div class="layui-input-block">
+                <input id="input_goodName" type="text" name="title" required  lay-verify="required" placeholder="请输入财产名称" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">价值</label>
+            <div class="layui-input-block">
+                <input id="input_price" type="text" name="title" required  lay-verify="required" placeholder="请输入价值" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button id="commit_value" type="button" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                <button id="reset_value" type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
 </div>
 <br>
 <br>
 <br>
-<div id="div_content">
-    <table align="center" border="1" id="table_content">
+<div id="div_content" align="center">
+    <%--<table align="center" border="1" id="table_content">--%>
+        <%--<tr>--%>
+            <%--<th>楼号</th>--%>
+            <%--<th>财产名称</th>--%>
+            <%--<th>价值</th>--%>
+            <%--<th>操作</th>--%>
+        <%--</tr>--%>
+        <%--<%--%>
+            <%--if (null != list) {--%>
+                <%--for (PropertyBean propertyBean : list) {--%>
+        <%--%>--%>
+                <%--<tr>--%>
+                    <%--<td><%=propertyBean.getBuildNumber()%></td>--%>
+                    <%--<td><%=propertyBean.getGoodName()%></td>--%>
+                    <%--<td><%=propertyBean.getPrice()%></td>--%>
+                    <%--<td><button onclick="deleteThisProperty(<%=propertyBean.getId()%>,this)">删除</button></td>--%>
+                <%--</tr>--%>
+
+         <%--<%       }--%>
+            <%--}--%>
+        <%--%>--%>
+    <%--</table>--%>
+
+    <table class="layui-table" id="table_content" style="width: 700px;" align="center">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
         <tr>
             <th>楼号</th>
             <th>财产名称</th>
             <th>价值</th>
             <th>操作</th>
         </tr>
+        </thead>
+        <tbody>
         <%
             if (null != list) {
                 for (PropertyBean propertyBean : list) {
         %>
-                <tr>
-                    <td><%=propertyBean.getBuildNumber()%></td>
-                    <td><%=propertyBean.getGoodName()%></td>
-                    <td><%=propertyBean.getPrice()%></td>
-                    <td><button onclick="deleteThisProperty(<%=propertyBean.getId()%>,this)">删除</button></td>
-                </tr>
+        <tr>
+            <td><%=propertyBean.getBuildNumber()%></td>
+            <td><%=propertyBean.getGoodName()%></td>
+            <td><%=propertyBean.getPrice()%></td>
+            <td><button onclick="deleteThisProperty(<%=propertyBean.getId()%>,this)">删除</button></td>
+        </tr>
 
-         <%       }
-            }
+        <%       }
+        }
         %>
+        </tbody>
     </table>
+
 </div>
 </body>
 </html>

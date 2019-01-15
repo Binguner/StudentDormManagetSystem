@@ -121,12 +121,13 @@ public class StudentDao {
      * @param dormNumber
      * @return list of studentBean in this dormitory
      */
-    public static List<StudentBean> getStudentListByDormNumber(int dormNumber){
+    public static List<StudentBean> getStudentListByDormNumberAndBuildNumber(int buildNumber,int dormNumber){
         List<StudentBean> list = new ArrayList<>();
-        String sql = "select * from StudentTable where dormNumber=?";
+        String sql = "select * from StudentTable where buildNumber=? and dormNumber=?";
         try {
             PreparedStatement statement = connection.prepareStatement(sql);
-            statement.setInt(1,dormNumber);
+            statement.setInt(1,buildNumber);
+            statement.setInt(2,dormNumber);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()){
                 StudentBean studentBean = new StudentBean();
@@ -153,7 +154,7 @@ public class StudentDao {
      * @return list of this grade and this classNum's student
      */
     public static List<StudentBean> getStudentListByClassNum(String classNum){
-        String sql = "select * from StudentTable and classNum=?";
+        String sql = "select * from StudentTable where classNum=?";
         List<StudentBean> list = new ArrayList<>();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -451,5 +452,27 @@ public class StudentDao {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public static boolean changeStudentInfo(int id,String studentID,String studentName,String sex,String majorName,int grade,String  classNum,int buildNumber,int dormNumber){
+        String sql = "update StudentTable set studentName=?,sex=?,majorName=?,classNum=?,buildNumber=?,dormNumber=? where id =?;";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,studentName);
+            preparedStatement.setString(2,sex);
+            preparedStatement.setString(3,majorName);
+            preparedStatement.setString(4,classNum);
+            preparedStatement.setInt(5,buildNumber);
+            preparedStatement.setInt(6,dormNumber);
+            preparedStatement.setInt(7,id);
+            if (!preparedStatement.execute()){
+                return true;
+            }else {
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }

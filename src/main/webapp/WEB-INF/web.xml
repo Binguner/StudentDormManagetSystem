@@ -149,6 +149,15 @@
         <url-pattern>/handledorm</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>Page_EditStudent</servlet-name>
+        <servlet-class>Servlet.PageServlet.Page_ToEditStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Page_EditStudent</servlet-name>
+        <url-pattern>/editstudent</url-pattern>
+    </servlet-mapping>
+    
     <filter>
         <filter-name>IsLoginFilter</filter-name>
         <filter-class>Filter.isLoginFilter</filter-class>
