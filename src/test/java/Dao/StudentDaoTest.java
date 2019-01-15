@@ -371,7 +371,6 @@ public class StudentDaoTest {
         //String sql = "select studentID from StudentTable where classNum=?;";
         //String sql = "select studentID from StudentTable where classNum=? and sex='男';";
         String sql = "select studentID from StudentTable where classNum=? and sex='女';";
-
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1,className);
@@ -399,5 +398,7 @@ public class StudentDaoTest {
             );
         });
     }
+
+
 
 }

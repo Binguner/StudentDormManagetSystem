@@ -370,4 +370,84 @@ public class StudentDao {
         return rowCount;
     }
 
+    public static int getStudentCount(){
+        String sql = "select studentID from StudentTable;";
+        int number = 0;
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet set = statement.executeQuery(sql);
+            set.last();
+            number = set.getRow();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return number;
+    }
+
+    public static List<StudentBean> getGirlListByClassName(String className){
+        List<StudentBean> list = new ArrayList<>();
+        String sql = "select * from StudentTable where classNum =? and sex='女';";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,className);
+            ResultSet resultSet= preparedStatement.executeQuery();
+            while (resultSet.next()){
+                StudentBean studentBean = new StudentBean();
+                studentBean.setId(resultSet.getInt(1));
+                studentBean.setStudentID(resultSet.getString(2));
+                studentBean.setStudentName(resultSet.getString(3));
+                studentBean.setSex(resultSet.getString(4));
+                studentBean.setMajorName(resultSet.getString(5));
+                studentBean.setGrade(resultSet.getInt(6));
+                studentBean.setClassNum(resultSet.getString(7));
+                studentBean.setBuildNumber(resultSet.getInt(8));
+                studentBean.setDormNumber(resultSet.getInt(9));
+                list.add(studentBean);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+
+    }
+
+    public static List<StudentBean> getBoyListByClassName(String className){
+        List<StudentBean> list = new ArrayList<>();
+        String sql = "select * from StudentTable where classNum =? and sex='男';";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,className);
+            ResultSet resultSet= preparedStatement.executeQuery();
+            while (resultSet.next()){
+                StudentBean studentBean = new StudentBean();
+                studentBean.setId(resultSet.getInt(1));
+                studentBean.setStudentID(resultSet.getString(2));
+                studentBean.setStudentName(resultSet.getString(3));
+                studentBean.setSex(resultSet.getString(4));
+                studentBean.setMajorName(resultSet.getString(5));
+                studentBean.setGrade(resultSet.getInt(6));
+                studentBean.setClassNum(resultSet.getString(7));
+                studentBean.setBuildNumber(resultSet.getInt(8));
+                studentBean.setDormNumber(resultSet.getInt(9));
+                list.add(studentBean);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+
+    }
+
+    public static void setBuildNumberDormNumber(int studentiD,int buildNumber,int dormNumber){
+        String sql = "update StudentTable set buildNumber = ?, dormNumber = ? where id=?;";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,buildNumber);
+            preparedStatement.setInt(2,dormNumber);
+            preparedStatement.setInt(3,studentiD);
+            preparedStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

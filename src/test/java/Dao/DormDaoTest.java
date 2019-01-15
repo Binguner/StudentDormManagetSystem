@@ -183,9 +183,9 @@ public class DormDaoTest {
                 "values (?,?,?,?);";
 
 
-        for(int buildNumber = 1; buildNumber <= 10; buildNumber++){
-            for (int floorNumber = 1; floorNumber <= 6; floorNumber++){
-                for (int dormNumber = 1; dormNumber <= 6; dormNumber++){
+        for(int buildNumber = 1; buildNumber <= 5; buildNumber++){
+            for (int floorNumber = 1; floorNumber <= 5; floorNumber++){
+                for (int dormNumber = 1; dormNumber <= 18; dormNumber++){
                     int r_dormNumebr = Integer.parseInt(floorNumber+"0"+dormNumber);
                     System.out.println("d: " + r_dormNumebr);
                     try {
