@@ -12,24 +12,6 @@
     <script src="layui/layui.js"></script>
     <title>公寓管理系统主界面</title>
     <style type="text/css">
-
-        #div_title{
-            height: 50px;
-        }
-        #title{
-            font-size: 30px;
-            line-height: 35px;
-        }
-        #div1{
-            height:200px;
-            width:50px;
-            float:left;
-        }
-        #div2{
-            height:100%;
-            width:200px;
-            float:left;
-        }
     </style>
     <script type="text/javascript" language="JavaScript">
         layui.use('form',function () {
@@ -81,51 +63,42 @@
 <%--style="background-image:url(/pictures/login_bg.jpg)"--%>
 <body >
 <%--<a href="index.jsp">返回</a>--%>
-<div id="div_title" class="layui-bg-cyan">
-    <div style="width:30%;padding:0;margin:0;float:left;box-sizing:border-box;">
-        <a href="#" onclick="javascript:history.back(-1);">
-            <button class="layui-btn" style="height: 50px">
-                <i class="layui-icon">&#xe65c;</i> 返回
-            </button>
-        </a>
+<div class="layui-layout layui-layout-admin">
+
+    <div id="div_title" class="layui-header layui-bg-cyan">
+
+    <div class="layui-logo">
+        <button onclick="javascript:history.back(-1);" class="layui-btn layui-btn-sm  layui-bg-cyan"  style="height: 100%; width: 100%">
+            <i class="layui-icon layui-icon-return ">&nbsp返回主界面</i>
+        </button>
     </div>
 
-    <div style="width:40%;padding:0;margin-top:8px;float:left;box-sizing:border-box;">
-        <p id="title" align="center">欢迎使用学生公寓管理系统</p>
+    <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item"><a href="/logout">退出</a></li>
+        <span class="layui-nav-bar" style="left: 135.891px; top: 55px; width: 0px; opacity: 0;"></span></ul>
+
     </div>
+    <div id=div1 class="layui-side layui-bg-black">
 
-    <div align="right" style="width:30%;padding:0;margin:0;float:left;box-sizing:border-box;">
-        <a href="login.jsp">
-            <button class="layui-btn" style="height: 50px">
-                <i class="layui-icon">&#xe66f;</i> 注销
-            </button>
-        </a>
+    <div class="layui-side-scroll layui-bg-cyan">
+
+        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+            <li class="layui-nav-item layui-bg-cyan"><a href="/addStudent">录入学生信息</a></li>
+            <li class="layui-nav-item layui-bg-cyan "><a href="/dorm">寝室分配</a></li>
+            <li class="layui-nav-item layui-bg-cyan "><a href="/searchstudent">查询学生信息</a></li>
+            <li class="layui-nav-item layui-bg-cyan "><a href="/querydorm">查询寝室信息</a></li>
+            <li class="layui-nav-item layui-bg-cyan"><a href="/property">查询财产信息</a></li>
+            <li class="layui-nav-item layui-bg-cyan "> <a href="/goods">货物搬出登记</a></li>
+            <li class="layui-nav-item layui-bg-cyan"><a href="/addvisitor">外来人员登记</a></li>
+            <li class="layui-nav-item layui-bg-cyan" ><a href="/logout">退出系统</a></li>
+            <span class="layui-nav-bar" style="top: 67.5px; height: 0px; opacity: 0;"></span>
+        </ul>
+
     </div>
-</div>
-
-
-
-
-
-
-
-<div id=div1 class="layui-bg-cyan " style="margin-top: 50px">
-    <ul class="layui-nav layui-nav-tree site-demo-nav layui-bg-cyan " lay-filter="test">
-        <li class="layui-nav-item layui-bg-cyan "><a href="/AddStudent">录入学生信息</a></li>
-        <li class="layui-nav-item layui-bg-cyan "><a href="/dormdis">寝室分配</a></li>
-        <li class="layui-nav-item layui-bg-cyan "><a href="/querystudent">查询学生信息</a></li>
-        <li class="layui-nav-item layui-bg-cyan "><a href="/querydorm">查询寝室信息</a></li>
-        <li class="layui-nav-item layui-bg-green "><a href="/property">查询财产信息</a></li>
-        <li class="layui-nav-item layui-bg-cyan "> <a href="">登记信息</a></li>
-        <li class="layui-nav-item layui-bg-cyan"><a href="/addvisitor">外来人员登记</a></li>
-        <li class="layui-nav-item layui-bg-cyan"><a href="/goods">退出系统</a></li>
-    </ul>
-    <div id=div2 class="layui-bg-cyan">
     </div>
-</div>
-<div align="center">
+    <div class="layui-body" align="center" style="padding: 15px;">
 
-    <form style="width: 300px;" class="layui-form layui-form-pane" method="post">
+    <form style="width: 400px; margin-top: 110px" class="layui-form layui-form-pane" method="post">
         <div class="layui-form-item">
             <label class="layui-form-label">学号：</label>
             <div class="layui-input-block">
@@ -239,10 +212,7 @@
         <%--</table>--%>
     <%--</form>--%>
 </div>
-<br>
-<br>
-<br>
-<div align="center" id="button">版权所有@太原理工大学公寓管理中心</div>
+    <div align="center" class="layui-footer">©️太原理工大学公寓管理中心</div>
 </div>
 </body>
 </html>

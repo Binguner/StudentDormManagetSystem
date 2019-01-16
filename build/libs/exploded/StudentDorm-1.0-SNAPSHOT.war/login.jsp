@@ -9,6 +9,9 @@
 <html>
 <head>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="layui/layui.js"></script>
     <title>公寓管理系统登录界面</title>
     <style type="text/css">
         #div{
@@ -81,38 +84,82 @@
 <div align="center" id="header"><b>公寓管理系统登录界面</b>
 </div>
 <!--登陆输入框-->
-<div id="div">
+<div id="div" align="center">
 
     <br><br><br><br><br>
+    <br><br><br><br><br>
     <%--<form name="my_form" method="post">--%>
-        <table align="center";style="border-collapse:separate;border-spacing:0px 10px;">
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr align=center>
-                <th style="font-family: KaiTi;font-size: 25px;color:#3C3C3C;">账号: &nbsp</th>
-                <td>
-                    <input type="text" style="height:30px" name="username" id="id_username" placeholder="请输入您的学号" size="35">
-                </td>
-            </tr>
-            <tr align=center></tr>
-            <tr align=center>
-                <th style="font-family: KaiTi;font-size: 25px;color:#3C3C3C">密码: &nbsp</th>
-                <td>
-                    <input type="text" style="height:30px" name="password" id="id_password" placeholder="请输入您的密码" size="35">
-                </td>
-            </tr>
-        </table>
-        <br>
-        <center>
-            <input type="submit"  style="height:30px;width:60px" name="submit" onclick="doLogin()" value="登陆" >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-            <input type="reset" style="height:30px;width:60px" name=“reset” value="重置">
-        </center>
+        <%--<table align="center";style="border-collapse:separate;border-spacing:0px 10px;">--%>
+            <%--<tr></tr>--%>
+            <%--<tr></tr>--%>
+            <%--<tr></tr>--%>
+            <%--<tr align=center>--%>
+                <%--<th style="font-family: KaiTi;font-size: 25px;color:#3C3C3C;">账号: &nbsp</th>--%>
+                <%--<td>--%>
+                    <%--<input type="text" style="height:30px" name="username" id="id_username" placeholder="请输入您的学号" size="35">--%>
+                <%--</td>--%>
+            <%--</tr>--%>
+            <%--<tr align=center></tr>--%>
+            <%--<tr align=center>--%>
+                <%--<th style="font-family: KaiTi;font-size: 25px;color:#3C3C3C">密码: &nbsp</th>--%>
+                <%--<td>--%>
+                    <%--<input type="text" style="height:30px" name="password" id="id_password" placeholder="请输入您的密码" size="35">--%>
+                <%--</td>--%>
+            <%--</tr>--%>
+        <%--</table>--%>
+        <%--<br>--%>
+        <%--<center>--%>
+            <%--<input type="submit"  style="height:30px;width:60px" name="submit" onclick="doLogin()" value="登陆" >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp--%>
+            <%--<input type="reset" style="height:30px;width:60px" name=“reset” value="重置">--%>
+        <%--</center>--%>
+
+
+    <form class="layui-form layui-form-pane " style="width: 400px;padding: 30px">
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号</label>
+            <div class="layui-input-block">
+                <input id="id_username" type="text" name="title" required  lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-block">
+                <input type="password" id="id_password" name="password" required lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+
+
+
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button onclick="doLogin()" type="button" class="layui-btn" lay-submit lay-filter="formDemo">登陆</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+
+
+
     <%--</form>--%>
 </div>
 
 <!--页尾文本-->
-<div align="center" id="button">版权所有@太原理工大学公寓管理中心</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="center" class="" id="button">©太原理工大学公寓管理中心</div>
 
 </body>
 </html>
